@@ -1,0 +1,399 @@
+name = "jsp-lean-proofs"
+defaultTargets = ["JSP-000252", "JSP-000286", "JSP-000298", "JSP-000307", "JSP-000313", "JSP-000314", "JSP-000315", "JSP-000320", "JSP-000323", "JSP-000331", "JSP-000356", "JSP-000358", "JSP-000363", "JSP-000393", "JSP-000397", "JSP-000419", "JSP-000421", "JSP-000422", "JSP-000423", "JSP000060", "JSP000076", "JSP000077", "JSP000085", "JSP000093", "JSP000093A", "JSP000093B", "JSP000104", "JSP000108", "JSP000121", "JSP000139", "JSP000140", "JSP000163", "JSP000173", "JSP000176", "JSP000179", "JSP000182", "JSP000194", "JSP000195", "JSP000198", "JSP000208", "JSP000211", "JSP000216", "JSP000242", "JSP000248", "JSP000250", "JSP000256", "JSP000259", "JSP000264", "JSP000281", "JSP000285", "JSP000334", "JSP000357", "JSP000359", "JSP000360", "JSP000361", "JSP000364", "JSP000377", "JSP000378", "JSP000385", "JSP000391", "JSP000399", "JSP000400", "JSP000415", "JSP000428", "JSP000433", "JSP000440", "JSP000450", "JSP000455", "JSP000460", "JSP000464", "JSP000467", "JSP000468", "JSP000471", "JSP000475", "JSP000476", "JSP000486", "JSP000493", "JSP000494", "JSP000503", "JSP000511", "JSP000512", "JSP000513", "JSP000514", "JSP000517", "JSP000518", "JSP000539", "JSP000554", "JSP000568", "JSP000573", "JSP000589", "JSP000590", "JSP000601", "JSP000616", "JSP000714", "JSP000934", "JSP000935", "JSP000945", "JSP000990"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "c32e1ec0d1eb5237ba344eee50162f45d5b0fc76"
+
+[[lean_lib]]
+name = "JSP-000252"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000286"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000298"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000307"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000313"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000314"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000315"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000320"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000323"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000331"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000356"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000358"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000363"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000393"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000397"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000419"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000421"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000422"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000423"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000060"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000076"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000077"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000085"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000093"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000093A"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000093B"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000104"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000108"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000121"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000139"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000140"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000163"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000173"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000176"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000179"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000182"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000194"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000195"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000198"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000208"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000211"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000216"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000242"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000248"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000250"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000256"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000259"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000264"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000281"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000285"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000334"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000357"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000359"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000360"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000361"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000364"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000377"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000378"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000385"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000391"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000399"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000400"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000415"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000428"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000433"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000440"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000450"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000455"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000460"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000464"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000467"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000468"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000471"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000475"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000476"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000486"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000493"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000494"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000503"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000511"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000512"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000513"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000514"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000517"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000518"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000539"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000554"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000568"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000573"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000589"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000590"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000601"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000616"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000714"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000934"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000935"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000945"
+srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP000990"
+srcDir = "proofs"
