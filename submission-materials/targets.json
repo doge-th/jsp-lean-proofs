@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "project": {
+    "root": "/Users/doge/.zcode/workspace/doge-th-jsp-lean-proofs",
+    "repository": "https://github.com/doge-th/jsp-lean-proofs",
+    "commit": "569f46d00bb37ecc451193fa05f1b5d3180ca13f",
+    "toolchain": "leanprover/lean4:v4.35.0-rc1"
+  },
+  "problems": [
+    {
+      "id": "JSP-000323",
+      "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000323",
+      "requirements": [
+        {
+          "id": "main",
+          "description": "Prove that for n >= 4 and k >= 2n, n! cannot be expressed as the product of k distinct integers each strictly greater than n.",
+          "targets": ["erdos_graham_bound", "factorial_le_pow", "minDistinctProduct_ge_pow"],
+          "coverage": "complete"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000307",
+      "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000307",
+      "requirements": [
+        {
+          "id": "main",
+          "description": "Show there exist three consecutive integers with strictly decreasing largest prime factors.",
+          "targets": ["jsp_000307_statement", "triple_13_14_15", "triple_values"],
+          "coverage": "complete"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000252",
+      "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000252",
+      "requirements": [
+        {
+          "id": "main",
+          "description": "Compute number of Egyptian subsets of {1,...,n} for n=1..6.",
+          "targets": ["numEgyptian_def"],
+          "coverage": "complete"
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "erdos_graham_bound",
+      "problem": "JSP-000323",
+      "role": "theorem",
+      "module": "JSP-000323",
+      "source": "JSP-000323.lean",
+      "declaration": "erdos_graham_bound"
+    },
+    {
+      "id": "factorial_le_pow",
+      "problem": "JSP-000323",
+      "role": "lemma",
+      "module": "JSP-000323",
+      "source": "JSP-000323.lean",
+      "declaration": "factorial_le_pow"
+    },
+    {
+      "id": "minDistinctProduct_ge_pow",
+      "problem": "JSP-000323",
+      "role": "lemma",
+      "module": "JSP-000323",
+      "source": "JSP-000323.lean",
+      "declaration": "minDistinctProduct_ge_pow"
+    },
+    {
+      "id": "jsp_000307_statement",
+      "problem": "JSP-000307",
+      "role": "theorem",
+      "module": "JSP000307",
+      "source": "JSP000307.lean",
+      "declaration": "jsp_000307_statement"
+    },
+    {
+      "id": "triple_13_14_15",
+      "problem": "JSP-000307",
+      "role": "theorem",
+      "module": "JSP000307",
+      "source": "JSP000307.lean",
+      "declaration": "triple_13_14_15"
+    },
+    {
+      "id": "triple_values",
+      "problem": "JSP-000307",
+      "role": "theorem",
+      "module": "JSP000307",
+      "source": "JSP000307.lean",
+      "declaration": "triple_values"
+    },
+    {
+      "id": "numEgyptian_def",
+      "problem": "JSP-000252",
+      "role": "theorem",
+      "module": "JSP000252",
+      "source": "JSP000252.lean",
+      "declaration": "numEgyptian_def"
+    }
+  ]
+}
