@@ -1,0 +1,1193 @@
+JSP000243.tail_below_one : ∀ (a : Nat)
+  (ha : @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a),
+  @LT.lt.{0} Rat Rat.instLT
+    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+          (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (@Nat.cast.{0} Rat Rat.instNatCast a))
+          (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+            (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))))
+    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+theorem JSP000243.tail_below_one : ∀ (a : Nat)
+  (ha : @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a),
+  @LT.lt.{0} Rat Rat.instLT
+    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+          (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (@Nat.cast.{0} Rat Rat.instNatCast a))
+          (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+            (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))))
+    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) :=
+fun (a : ⋯) (ha : ⋯) =>
+  have h8 : ⋯ :=
+    @cast.{0} (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a)
+      (@LE.le.{0} Rat (@Preorder.toLE.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          a))
+      (@Eq.symm.{1} Prop
+        (@LE.le.{0} Rat (@Preorder.toLE.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+          (@Nat.cast.{0} Rat
+            (@AddMonoidWithOne.toNatCast.{0} Rat
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+            (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))))
+          (@Nat.cast.{0} Rat
+            (@AddMonoidWithOne.toNatCast.{0} Rat
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+            a))
+        (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a)
+        (@Nat.cast_le._simp_1.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass Rat.instCharZero
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a))
+      ha;
+  have hp0 : ⋯ :=
+    @Iff.mpr
+      (@LT.lt.{0} Rat (@Preorder.toLT.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+        (@OfNat.ofNat.{0} Rat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Rat
+            (@AddZero.toZero.{0} Rat
+              (@AddZeroClass.toAddZero.{0} Rat
+                (@AddMonoid.toAddZeroClass.{0} Rat
+                  (@AddMonoidWithOne.toAddMonoid.{0} Rat
+                    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))))))))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          a))
+      (@LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) a)
+      (@Nat.cast_pos'.{0} Rat
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+          (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+        Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass
+        (@NeZero.charZero_one.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instCharZero)
+        a)
+      (@lt_of_lt_of_le.{0} Nat
+        (@PartialOrder.toPreorder.{0} Nat (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder))
+        (@OfNat.ofNat.{0} Nat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Nat
+            (@inferInstance.{1} (Zero.{0} Nat) (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))))
+        (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a
+        (@Mathlib.Meta.Positivity.pos_of_isNat.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (nat_lit 8) Nat.instSemiring (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder)
+          (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+            Nat.instIsStrictOrderedRing)
+          Nat.instNontrivial
+          (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+            (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) (nat_lit 8)
+            (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))))
+          (@Eq.refl.{1} Bool (Nat.ble (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 8))))
+        ha);
+  have hp1 : ⋯ :=
+    @Iff.mpr
+      (@LT.lt.{0} Rat (@Preorder.toLT.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+        (@OfNat.ofNat.{0} Rat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Rat
+            (@AddZero.toZero.{0} Rat
+              (@AddZeroClass.toAddZero.{0} Rat
+                (@AddMonoid.toAddZeroClass.{0} Rat
+                  (@AddMonoidWithOne.toAddMonoid.{0} Rat
+                    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))))))))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+      (@LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+      (@Nat.cast_pos'.{0} Rat
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+          (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+        Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass
+        (@NeZero.charZero_one.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instCharZero)
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+      (@add_pos'.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Nat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Nat
+            (@inferInstance.{1} (Zero.{0} Nat) (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))))
+        a (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)
+        (@PartialOrder.toPreorder.{0} Nat (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder))
+        (@IsOrderedAddMonoid.toAddLeftMono.{0} Nat Nat.instAddCommMonoid Nat.instPreorder Nat.instIsOrderedAddMonoid)
+        (@lt_of_lt_of_le.{0} Nat
+          (@PartialOrder.toPreorder.{0} Nat (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder))
+          (@OfNat.ofNat.{0} Nat (nat_lit 0)
+            (@Zero.toOfNat0.{0} Nat
+              (@inferInstance.{1} (Zero.{0} Nat) (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))))
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a
+          (@Mathlib.Meta.Positivity.pos_of_isNat.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+            (nat_lit 8) Nat.instSemiring (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder)
+            (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+              Nat.instIsStrictOrderedRing)
+            Nat.instNontrivial
+            (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+              (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) (nat_lit 8)
+              (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))))
+            (@Eq.refl.{1} Bool (Nat.ble (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 8))))
+          ha)
+        (@Mathlib.Meta.Positivity.pos_of_isNat.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+          (nat_lit 1) Nat.instSemiring (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder)
+          (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+            Nat.instIsStrictOrderedRing)
+          Nat.instNontrivial
+          (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 1)
+            (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          (@Eq.refl.{1} Bool (Nat.ble (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 1)))));
+  have hp2 : ⋯ :=
+    @Iff.mpr
+      (@LT.lt.{0} Rat (@Preorder.toLT.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+        (@OfNat.ofNat.{0} Rat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Rat
+            (@AddZero.toZero.{0} Rat
+              (@AddZeroClass.toAddZero.{0} Rat
+                (@AddMonoid.toAddZeroClass.{0} Rat
+                  (@AddMonoidWithOne.toAddMonoid.{0} Rat
+                    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))))))))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+      (@LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+      (@Nat.cast_pos'.{0} Rat
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+          (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+        Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass
+        (@NeZero.charZero_one.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instCharZero)
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+      (@add_pos'.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+        (@OfNat.ofNat.{0} Nat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Nat
+            (@inferInstance.{1} (Zero.{0} Nat) (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))))
+        a (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)
+        (@PartialOrder.toPreorder.{0} Nat (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder))
+        (@IsOrderedAddMonoid.toAddLeftMono.{0} Nat Nat.instAddCommMonoid Nat.instPreorder Nat.instIsOrderedAddMonoid)
+        (@lt_of_lt_of_le.{0} Nat
+          (@PartialOrder.toPreorder.{0} Nat (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder))
+          (@OfNat.ofNat.{0} Nat (nat_lit 0)
+            (@Zero.toOfNat0.{0} Nat
+              (@inferInstance.{1} (Zero.{0} Nat) (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))))
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a
+          (@Mathlib.Meta.Positivity.pos_of_isNat.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+            (nat_lit 8) Nat.instSemiring (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder)
+            (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+              Nat.instIsStrictOrderedRing)
+            Nat.instNontrivial
+            (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+              (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) (nat_lit 8)
+              (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))))
+            (@Eq.refl.{1} Bool (Nat.ble (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 8))))
+          ha)
+        (@Mathlib.Meta.Positivity.pos_of_isNat.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+          (nat_lit 2) Nat.instSemiring (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder)
+          (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+            Nat.instIsStrictOrderedRing)
+          Nat.instNontrivial
+          (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) (nat_lit 2)
+            (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+          (@Eq.refl.{1} Bool (Nat.ble (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 2)))));
+  have hp3 : ⋯ :=
+    @Iff.mpr
+      (@LT.lt.{0} Rat (@Preorder.toLT.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+        (@OfNat.ofNat.{0} Rat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Rat
+            (@AddZero.toZero.{0} Rat
+              (@AddZeroClass.toAddZero.{0} Rat
+                (@AddMonoid.toAddZeroClass.{0} Rat
+                  (@AddMonoidWithOne.toAddMonoid.{0} Rat
+                    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))))))))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+      (@LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+      (@Nat.cast_pos'.{0} Rat
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+          (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+        Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass
+        (@NeZero.charZero_one.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instCharZero)
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+      (@add_pos'.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+        (@OfNat.ofNat.{0} Nat (nat_lit 0)
+          (@Zero.toOfNat0.{0} Nat
+            (@inferInstance.{1} (Zero.{0} Nat) (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))))
+        a (@AddMonoid.toAddZeroClass.{0} Nat Nat.instAddMonoid)
+        (@PartialOrder.toPreorder.{0} Nat (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder))
+        (@IsOrderedAddMonoid.toAddLeftMono.{0} Nat Nat.instAddCommMonoid Nat.instPreorder Nat.instIsOrderedAddMonoid)
+        (@lt_of_lt_of_le.{0} Nat
+          (@PartialOrder.toPreorder.{0} Nat (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder))
+          (@OfNat.ofNat.{0} Nat (nat_lit 0)
+            (@Zero.toOfNat0.{0} Nat
+              (@inferInstance.{1} (Zero.{0} Nat) (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))))
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a
+          (@Mathlib.Meta.Positivity.pos_of_isNat.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+            (nat_lit 8) Nat.instSemiring (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder)
+            (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+              Nat.instIsStrictOrderedRing)
+            Nat.instNontrivial
+            (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+              (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) (nat_lit 8)
+              (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))))
+            (@Eq.refl.{1} Bool (Nat.ble (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 8))))
+          ha)
+        (@Mathlib.Meta.Positivity.pos_of_isNat.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+          (nat_lit 3) Nat.instSemiring (@inferInstance.{1} (PartialOrder.{0} Nat) Nat.instPartialOrder)
+          (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+            Nat.instIsStrictOrderedRing)
+          Nat.instNontrivial
+          (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) (nat_lit 3)
+            (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+          (@Eq.refl.{1} Bool (Nat.ble (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 3)))));
+  have hle0 : ⋯ :=
+    @cast.{0} (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a)
+      (@LE.le.{0} Rat (@Preorder.toLE.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))))
+        (@Nat.cast.{0} Rat
+          (@AddMonoidWithOne.toNatCast.{0} Rat
+            (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+              (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+          a))
+      (@Eq.symm.{1} Prop
+        (@LE.le.{0} Rat (@Preorder.toLE.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+          (@Nat.cast.{0} Rat
+            (@AddMonoidWithOne.toNatCast.{0} Rat
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+            (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))))
+          (@Nat.cast.{0} Rat
+            (@AddMonoidWithOne.toNatCast.{0} Rat
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+            a))
+        (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a)
+        (@Nat.cast_le._simp_1.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass Rat.instCharZero
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))) a))
+      ha;
+  have hle1 : ⋯ :=
+    @Eq.mpr.{0}
+      (@LE.le.{0} Rat Rat.instLE (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+      (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+      (@id.{0}
+        (@Eq.{1} Prop
+          (@LE.le.{0} Rat Rat.instLE (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+            (@Nat.cast.{0} Rat Rat.instNatCast
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+          (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+        (@Nat.cast_le._simp_1.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass Rat.instCharZero
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+      (@Decidable.byContradiction
+        (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+        (Nat.decLe (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+        fun
+          (a_1 :
+            Not
+              (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))) =>
+        JSP000243.tail_below_one._proof_1_1 a ha a_1);
+  have hle2 : ⋯ :=
+    @Eq.mpr.{0}
+      (@LE.le.{0} Rat Rat.instLE (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+      (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+      (@id.{0}
+        (@Eq.{1} Prop
+          (@LE.le.{0} Rat Rat.instLE (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+            (@Nat.cast.{0} Rat Rat.instNatCast
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+          (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+        (@Nat.cast_le._simp_1.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass Rat.instCharZero
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+      (@Decidable.byContradiction
+        (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+        (Nat.decLe (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+        fun
+          (a_1 :
+            Not
+              (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))) =>
+        JSP000243.tail_below_one._proof_1_2 a ha a_1);
+  have hle3 : ⋯ :=
+    @Eq.mpr.{0}
+      (@LE.le.{0} Rat Rat.instLE (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+      (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+      (@id.{0}
+        (@Eq.{1} Prop
+          (@LE.le.{0} Rat Rat.instLE (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+            (@Nat.cast.{0} Rat Rat.instNatCast
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+          (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+        (@Nat.cast_le._simp_1.{0} Rat
+          (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+            (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+          Rat.instPartialOrder Rat.instAddLeftMono Rat.instZeroLEOneClass Rat.instCharZero
+          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+      (@Decidable.byContradiction
+        (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+        (Nat.decLe (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+        fun
+          (a_1 :
+            Not
+              (@LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))) =>
+        JSP000243.tail_below_one._proof_1_3 a ha a_1);
+  have h8pos : ⋯ :=
+    @Mathlib.Meta.NormNum.isNat_lt_true.{0} Rat Rat.semiring Rat.instPartialOrder
+      (@IsStrictOrderedRing.toIsOrderedRing.{0} Rat Rat.semiring Rat.instPartialOrder Rat.instIsStrictOrderedRing)
+      Rat.instCharZero (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8))) (nat_lit 0) (nat_lit 8)
+      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+          (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))) (nat_lit 0)
+        (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0)))))
+      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+        (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+          (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8))) (nat_lit 8)
+        (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+      (@Eq.refl.{1} Bool Bool.false);
+  have b0 : ⋯ :=
+    @one_div_le_one_div_of_le.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField) Rat.instPartialOrder
+      (@PosMulReflectLE.toPosMulReflectLT.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)
+        Rat.instPartialOrder
+        (@PosMulStrictMono.toPosMulReflectLE.{0} Rat
+          (@MulZeroClass.toMul.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring))
+          (@MulZeroClass.toZero.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)) Rat.linearOrder
+          (@IsStrictOrderedRing.toPosMulStrictMono.{0} Rat Rat.semiring Rat.instPartialOrder
+            Rat.instIsStrictOrderedRing)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8))) (@Nat.cast.{0} Rat Rat.instNatCast a) h8pos hle0;
+  have b1 : ⋯ :=
+    @one_div_le_one_div_of_le.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField) Rat.instPartialOrder
+      (@PosMulReflectLE.toPosMulReflectLT.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)
+        Rat.instPartialOrder
+        (@PosMulStrictMono.toPosMulReflectLE.{0} Rat
+          (@MulZeroClass.toMul.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring))
+          (@MulZeroClass.toZero.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)) Rat.linearOrder
+          (@IsStrictOrderedRing.toPosMulStrictMono.{0} Rat Rat.semiring Rat.instPartialOrder
+            Rat.instIsStrictOrderedRing)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+      (@Nat.cast.{0} Rat Rat.instNatCast
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+      h8pos hle1;
+  have b2 : ⋯ :=
+    @one_div_le_one_div_of_le.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField) Rat.instPartialOrder
+      (@PosMulReflectLE.toPosMulReflectLT.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)
+        Rat.instPartialOrder
+        (@PosMulStrictMono.toPosMulReflectLE.{0} Rat
+          (@MulZeroClass.toMul.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring))
+          (@MulZeroClass.toZero.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)) Rat.linearOrder
+          (@IsStrictOrderedRing.toPosMulStrictMono.{0} Rat Rat.semiring Rat.instPartialOrder
+            Rat.instIsStrictOrderedRing)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+      (@Nat.cast.{0} Rat Rat.instNatCast
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+      h8pos hle2;
+  have b3 : ⋯ :=
+    @one_div_le_one_div_of_le.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField) Rat.instPartialOrder
+      (@PosMulReflectLE.toPosMulReflectLT.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)
+        Rat.instPartialOrder
+        (@PosMulStrictMono.toPosMulReflectLE.{0} Rat
+          (@MulZeroClass.toMul.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring))
+          (@MulZeroClass.toZero.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring)) Rat.linearOrder
+          (@IsStrictOrderedRing.toPosMulStrictMono.{0} Rat Rat.semiring Rat.instPartialOrder
+            Rat.instIsStrictOrderedRing)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+      (@Nat.cast.{0} Rat Rat.instNatCast
+        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+          (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+      h8pos hle3;
+  have c1 : ⋯ :=
+    have this :
+      @Eq.{1} Rat
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))) :=
+      @Eq.mpr.{0}
+        (@Eq.{1} Rat
+          (@Nat.cast.{0} Rat Rat.instNatCast
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))))
+        (@Eq.{1} Nat
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+        (@id.{0}
+          (@Eq.{1} Prop
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))))
+            (@Eq.{1} Nat
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+          (@Eq.trans.{1} Prop
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))))
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+            (@Eq.{1} Nat
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@congrArg.{1, 1} Rat Prop
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Eq.{1} Rat
+                (@Nat.cast.{0} Rat Rat.instNatCast
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+              (@congrArg.{1, 1} Rat Rat (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a))
+                (@Eq.symm.{1} Rat
+                  (@Nat.cast.{0} Rat
+                    (@AddMonoidWithOne.toNatCast.{0} Rat
+                      (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                        (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 1)
+                    (@One.toOfNat1.{0} Rat
+                      (@AddMonoidWithOne.toOne.{0} Rat
+                        (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                          (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))))
+                  (@Nat.cast_one.{0} Rat
+                    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))))))
+            (@Eq.trans.{1} Prop
+              (@Eq.{1} Rat
+                (@Nat.cast.{0} Rat Rat.instNatCast
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                  (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+              (@Eq.{1} Rat
+                (@Nat.cast.{0} Rat Rat.instNatCast
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Nat.cast.{0} Rat
+                  (@AddMonoidWithOne.toNatCast.{0} Rat
+                    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+              (@Eq.{1} Nat
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@congrArg.{1, 1} Rat Prop
+                (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                  (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Nat.cast.{0} Rat
+                  (@AddMonoidWithOne.toNatCast.{0} Rat
+                    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Eq.{1} Rat
+                  (@Nat.cast.{0} Rat Rat.instNatCast
+                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+                (@Nat.cast_add._simp_1.{0} Rat
+                  (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                    (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                  a (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Nat.cast_inj._simp_1.{0} Rat
+                (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                  (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                Rat.instCharZero
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))))
+        (@Eq.refl.{1} Nat
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))));
+    @Eq.mp.{0}
+      (@LE.le.{0} Rat Rat.instLE
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@Nat.cast.{0} Rat Rat.instNatCast
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+      (@LE.le.{0} Rat Rat.instLE
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+      (@congrArg.{1, 1} Rat Prop
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))
+        (fun (_a : Rat) =>
+          @LE.le.{0} Rat Rat.instLE
+            (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) _a)
+            (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+        this)
+      b1;
+  have c2 : ⋯ :=
+    have this :
+      @Eq.{1} Rat
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2)))) :=
+      @Eq.mpr.{0}
+        (@Eq.{1} Rat
+          (@Nat.cast.{0} Rat Rat.instNatCast
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2)))))
+        (@Eq.{1} Nat
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+        (@id.{0}
+          (@Eq.{1} Prop
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2)))))
+            (@Eq.{1} Nat
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+          (@Eq.trans.{1} Prop
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+              (@Nat.cast.{0} Rat
+                (@AddMonoidWithOne.toNatCast.{0} Rat
+                  (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                    (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+            (@Eq.{1} Nat
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+            (@congrArg.{1, 1} Rat Prop
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+              (@Nat.cast.{0} Rat
+                (@AddMonoidWithOne.toNatCast.{0} Rat
+                  (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                    (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+              (@Eq.{1} Rat
+                (@Nat.cast.{0} Rat Rat.instNatCast
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+              (@Nat.cast_add._simp_1.{0} Rat
+                (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                  (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                a (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+            (@Nat.cast_inj._simp_1.{0} Rat
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+              Rat.instCharZero
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))))
+        (@Eq.refl.{1} Nat
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))));
+    @Eq.mp.{0}
+      (@LE.le.{0} Rat Rat.instLE
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@Nat.cast.{0} Rat Rat.instNatCast
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+      (@LE.le.{0} Rat Rat.instLE
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2)))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+      (@congrArg.{1, 1} Rat Prop
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+        (fun (_a : Rat) =>
+          @LE.le.{0} Rat Rat.instLE
+            (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) _a)
+            (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+        this)
+      b2;
+  have c3 : ⋯ :=
+    have this :
+      @Eq.{1} Rat
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))) :=
+      @Eq.mpr.{0}
+        (@Eq.{1} Rat
+          (@Nat.cast.{0} Rat Rat.instNatCast
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+        (@Eq.{1} Nat
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+        (@id.{0}
+          (@Eq.{1} Prop
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+            (@Eq.{1} Nat
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+          (@Eq.trans.{1} Prop
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+            (@Eq.{1} Rat
+              (@Nat.cast.{0} Rat Rat.instNatCast
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+              (@Nat.cast.{0} Rat
+                (@AddMonoidWithOne.toNatCast.{0} Rat
+                  (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                    (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+            (@Eq.{1} Nat
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+            (@congrArg.{1, 1} Rat Prop
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+                (@Nat.cast.{0} Rat Rat.instNatCast (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+              (@Nat.cast.{0} Rat
+                (@AddMonoidWithOne.toNatCast.{0} Rat
+                  (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                    (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing))))
+                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+              (@Eq.{1} Rat
+                (@Nat.cast.{0} Rat Rat.instNatCast
+                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                    (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+              (@Nat.cast_add._simp_1.{0} Rat
+                (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                  (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                a (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+            (@Nat.cast_inj._simp_1.{0} Rat
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+              Rat.instCharZero
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+                (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))))
+        (@Eq.refl.{1} Nat
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))));
+    @Eq.mp.{0}
+      (@LE.le.{0} Rat Rat.instLE
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@Nat.cast.{0} Rat Rat.instNatCast
+            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+              (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+      (@LE.le.{0} Rat Rat.instLE
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+      (@congrArg.{1, 1} Rat Prop
+        (@Nat.cast.{0} Rat Rat.instNatCast
+          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) a
+            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))
+        (fun (_a : Rat) =>
+          @LE.le.{0} Rat Rat.instLE
+            (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) _a)
+            (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))))
+        this)
+      b3;
+  @lt_of_not_ge.{0} Rat Rat.linearOrder
+    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+          (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (@Nat.cast.{0} Rat Rat.instNatCast a))
+          (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+            (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+            (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd) (@Nat.cast.{0} Rat Rat.instNatCast a)
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))))
+    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) fun (a_1 : ⋯) =>
+    @Mathlib.Tactic.Linarith.lt_irrefl.{0} Rat Rat.instPreorder
+      (@OfNat.ofNat.{0} Rat (nat_lit 0)
+        (@Zero.toOfNat0.{0} Rat (@MulZeroClass.toZero.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring))))
+      (@Eq.mp.{0}
+        (@LT.lt.{0} Rat (@Preorder.toLT.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+            (@instHAdd.{0} Rat (@AddSemigroup.toAdd.{0} Rat (@AddMonoid.toAddSemigroup.{0} Rat Rat.addMonoid)))
+            (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+              (@instHAdd.{0} Rat (@AddSemigroup.toAdd.{0} Rat (@AddMonoid.toAddSemigroup.{0} Rat Rat.addMonoid)))
+              (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+                (@instHAdd.{0} Rat (@AddSemigroup.toAdd.{0} Rat (@AddMonoid.toAddSemigroup.{0} Rat Rat.addMonoid)))
+                (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+                  (@instHAdd.{0} Rat (@AddSemigroup.toAdd.{0} Rat (@AddMonoid.toAddSemigroup.{0} Rat Rat.addMonoid)))
+                  (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+                    (@instHAdd.{0} Rat (@AddSemigroup.toAdd.{0} Rat (@AddMonoid.toAddSemigroup.{0} Rat Rat.addMonoid)))
+                    (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                      (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring)))
+                      (@OfNat.ofNat.{0} Rat (nat_lit 4)
+                        (@instOfNatAtLeastTwo.{0} Rat (nat_lit 4)
+                          (@AddMonoidWithOne.toNatCast.{0} Rat
+                            (@AddCommMonoidWithOne.toAddMonoidWithOne.{0} Rat
+                              (@NonAssocSemiring.toAddCommMonoidWithOne.{0} Rat
+                                (@Semiring.toNonAssocSemiring.{0} Rat Rat.semiring))))
+                          (@Nat.instAtLeastTwoHAddOfNat
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) (nat_lit 2)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                            (@instNeZeroNatHAdd_1 (nat_lit 2)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+                              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))
+                      (@Neg.neg.{0} Rat
+                        (@NegZeroClass.toNeg.{0} Rat
+                          (@SubNegZeroMonoid.toNegZeroClass.{0} Rat
+                            (@SubtractionMonoid.toSubNegZeroMonoid.{0} Rat
+                              (@SubtractionCommMonoid.toSubtractionMonoid.{0} Rat
+                                (@AddCommGroup.toDivisionAddCommMonoid.{0} Rat Rat.addCommGroup)))))
+                        (@OfNat.ofNat.{0} Rat (nat_lit 1)
+                          (@One.toOfNat1.{0} Rat
+                            (@AddMonoidWithOne.toOne.{0} Rat
+                              (@AddCommMonoidWithOne.toAddMonoidWithOne.{0} Rat
+                                (@NonAssocSemiring.toAddCommMonoidWithOne.{0} Rat
+                                  (@Semiring.toNonAssocSemiring.{0} Rat Rat.semiring))))))))
+                    (@HSub.hSub.{0, 0, 0} Rat Rat Rat
+                      (@instHSub.{0} Rat
+                        (@SubNegMonoid.toSub.{0} Rat
+                          (@AddGroup.toSubNegMonoid.{0} Rat
+                            (@AddGroupWithOne.toAddGroup.{0} Rat
+                              (@Ring.toAddGroupWithOne.{0} Rat
+                                (@DivisionRing.toRing.{0} Rat (@Field.toDivisionRing.{0} Rat Rat.instField)))))))
+                      (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                        (@instHMul.{0} Rat
+                          (@Distrib.toMul.{0} Rat
+                            (@instDistribOfSemiring.{0} Rat
+                              (@CommSemiring.toSemiring.{0} Rat
+                                (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                        (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+                        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                          (@Nat.cast.{0} Rat Rat.instNatCast a)))
+                      (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                        (@instHMul.{0} Rat
+                          (@Distrib.toMul.{0} Rat
+                            (@instDistribOfSemiring.{0} Rat
+                              (@CommSemiring.toSemiring.{0} Rat
+                                (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+                  (@HSub.hSub.{0, 0, 0} Rat Rat Rat
+                    (@instHSub.{0} Rat
+                      (@SubNegMonoid.toSub.{0} Rat
+                        (@AddGroup.toSubNegMonoid.{0} Rat
+                          (@AddGroupWithOne.toAddGroup.{0} Rat
+                            (@Ring.toAddGroupWithOne.{0} Rat
+                              (@DivisionRing.toRing.{0} Rat (@Field.toDivisionRing.{0} Rat Rat.instField)))))))
+                    (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                      (@instHMul.{0} Rat
+                        (@Distrib.toMul.{0} Rat
+                          (@instDistribOfSemiring.{0} Rat
+                            (@CommSemiring.toSemiring.{0} Rat
+                              (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                      (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+                      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+                          (@Nat.cast.{0} Rat Rat.instNatCast a)
+                          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+                    (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                      (@instHMul.{0} Rat
+                        (@Distrib.toMul.{0} Rat
+                          (@instDistribOfSemiring.{0} Rat
+                            (@CommSemiring.toSemiring.{0} Rat
+                              (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+                (@HSub.hSub.{0, 0, 0} Rat Rat Rat
+                  (@instHSub.{0} Rat
+                    (@SubNegMonoid.toSub.{0} Rat
+                      (@AddGroup.toSubNegMonoid.{0} Rat
+                        (@AddGroupWithOne.toAddGroup.{0} Rat
+                          (@Ring.toAddGroupWithOne.{0} Rat
+                            (@DivisionRing.toRing.{0} Rat (@Field.toDivisionRing.{0} Rat Rat.instField)))))))
+                  (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                    (@instHMul.{0} Rat
+                      (@Distrib.toMul.{0} Rat
+                        (@instDistribOfSemiring.{0} Rat
+                          (@CommSemiring.toSemiring.{0} Rat
+                            (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                    (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+                    (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+                        (@Nat.cast.{0} Rat Rat.instNatCast a)
+                        (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))))
+                  (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                    (@instHMul.{0} Rat
+                      (@Distrib.toMul.{0} Rat
+                        (@instDistribOfSemiring.{0} Rat
+                          (@CommSemiring.toSemiring.{0} Rat
+                            (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+              (@HSub.hSub.{0, 0, 0} Rat Rat Rat
+                (@instHSub.{0} Rat
+                  (@SubNegMonoid.toSub.{0} Rat
+                    (@AddGroup.toSubNegMonoid.{0} Rat
+                      (@AddGroupWithOne.toAddGroup.{0} Rat
+                        (@Ring.toAddGroupWithOne.{0} Rat
+                          (@DivisionRing.toRing.{0} Rat (@Field.toDivisionRing.{0} Rat Rat.instField)))))))
+                (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                  (@instHMul.{0} Rat
+                    (@Distrib.toMul.{0} Rat
+                      (@instDistribOfSemiring.{0} Rat
+                        (@CommSemiring.toSemiring.{0} Rat
+                          (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 8) (@Rat.instOfNat (nat_lit 8)))
+                  (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+                      (@Nat.cast.{0} Rat Rat.instNatCast a)
+                      (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))))
+                (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                  (@instHMul.{0} Rat
+                    (@Distrib.toMul.{0} Rat
+                      (@instDistribOfSemiring.{0} Rat
+                        (@CommSemiring.toSemiring.{0} Rat
+                          (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+            (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+              (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 8)
+                (@instOfNatAtLeastTwo.{0} Rat (nat_lit 8)
+                  (@AddMonoidWithOne.toNatCast.{0} Rat
+                    (@AddCommMonoidWithOne.toAddMonoidWithOne.{0} Rat
+                      (@NonAssocSemiring.toAddCommMonoidWithOne.{0} Rat
+                        (@Semiring.toNonAssocSemiring.{0} Rat Rat.semiring))))
+                  (@Nat.instAtLeastTwoHAddOfNat
+                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) (nat_lit 6)
+                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                    (@instNeZeroNatHAdd_1 (nat_lit 6) (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+                      (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))
+              (@HSub.hSub.{0, 0, 0} Rat Rat Rat
+                (@instHSub.{0} Rat
+                  (@SubNegMonoid.toSub.{0} Rat
+                    (@AddGroup.toSubNegMonoid.{0} Rat
+                      (@AddGroupWithOne.toAddGroup.{0} Rat
+                        (@Ring.toAddGroupWithOne.{0} Rat
+                          (@DivisionRing.toRing.{0} Rat (@Field.toDivisionRing.{0} Rat Rat.instField)))))))
+                (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                  (@instHMul.{0} Rat
+                    (@Distrib.toMul.{0} Rat
+                      (@instDistribOfSemiring.{0} Rat
+                        (@CommSemiring.toSemiring.{0} Rat
+                          (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))
+                (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+                  (@instHAdd.{0} Rat
+                    (@Distrib.toAdd.{0} Rat
+                      (@instDistribOfSemiring.{0} Rat
+                        (@CommSemiring.toSemiring.{0} Rat
+                          (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                  (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+                    (@instHAdd.{0} Rat
+                      (@Distrib.toAdd.{0} Rat
+                        (@instDistribOfSemiring.{0} Rat
+                          (@CommSemiring.toSemiring.{0} Rat
+                            (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+                      (@instHAdd.{0} Rat
+                        (@Distrib.toAdd.{0} Rat
+                          (@instDistribOfSemiring.{0} Rat
+                            (@CommSemiring.toSemiring.{0} Rat
+                              (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                      (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                        (@instHMul.{0} Rat
+                          (@Distrib.toMul.{0} Rat
+                            (@instDistribOfSemiring.{0} Rat
+                              (@CommSemiring.toSemiring.{0} Rat
+                                (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                          (@Nat.cast.{0} Rat Rat.instNatCast a)))
+                      (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                        (@instHMul.{0} Rat
+                          (@Distrib.toMul.{0} Rat
+                            (@instDistribOfSemiring.{0} Rat
+                              (@CommSemiring.toSemiring.{0} Rat
+                                (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+                            (@Nat.cast.{0} Rat Rat.instNatCast a)
+                            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))))))
+                    (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                      (@instHMul.{0} Rat
+                        (@Distrib.toMul.{0} Rat
+                          (@instDistribOfSemiring.{0} Rat
+                            (@CommSemiring.toSemiring.{0} Rat
+                              (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+                          (@Nat.cast.{0} Rat Rat.instNatCast a)
+                          (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2)))))))
+                  (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                    (@instHMul.{0} Rat
+                      (@Distrib.toMul.{0} Rat
+                        (@instDistribOfSemiring.{0} Rat
+                          (@CommSemiring.toSemiring.{0} Rat
+                            (@Semifield.toCommSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+                    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                    (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+                      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+                      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+                        (@Nat.cast.{0} Rat Rat.instNatCast a)
+                        (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))))))))
+          (@OfNat.ofNat.{0} Rat (nat_lit 0)
+            (@Zero.toOfNat0.{0} Rat
+              (@MulZeroClass.toZero.{0} Rat
+                (@instMulZeroClassOfSemiring.{0} Rat
+                  (@Ring.toSemiring.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))))))
+        (@LT.lt.{0} Rat (@Preorder.toLT.{0} Rat (@PartialOrder.toPreorder.{0} Rat Rat.instPartialOrder))
+          (@OfNat.ofNat.{0} Rat (nat_lit 0)
+            (@Zero.toOfNat0.{0} Rat (@MulZeroClass.toZero.{0} Rat (@instMulZeroClassOfSemiring.{0} Rat Rat.semiring))))
+          (@OfNat.ofNat.{0} Rat (nat_lit 0)
+            (@Zero.toOfNat0.{0} Rat
+              (@MulZeroClass.toZero.{0} Rat
+                (@instMulZeroClassOfSemiring.{0} Rat
+                  (@Ring.toSemiring.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))))))
+        (@congrArg.{1, 1} Rat Prop
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+            (@instHAdd.{0} Rat (@AddSemigroup.toAdd.{0} Rat (@AddMonoid.toAddSemigroup.{0} Rat Rat.addMonoid)))
+            (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+              (@instHAdd.{0} Rat (@AddSemigroup.toAdd.{0} Rat (@AddMonoid.toAddSemigroup.{0} Rat Rat.addMonoid)))
+              (@HAdd.hAdd.{0, 0, 0} ⋯ ⋯ ⋯ ⋯ ⋯ ⋯) ⋯)
+            ⋯)
+          ⋯ ⋯ ⋯)
+        ⋯)
+'JSP000243.tail_below_one' depends on axioms: [propext, Classical.choice, Quot.sound]

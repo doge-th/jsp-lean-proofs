@@ -1,0 +1,964 @@
+{
+  "scope": "target_checks_only",
+  "semantic_verdict": "not_determined",
+  "preflight": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848",
+    "git_status": "?? targets.json",
+    "toolchain_file": "leanprover/lean4:v4.35.0-rc1",
+    "file_sha256": {
+      "lake-manifest.json": "572f9feb246da12800feba740c647bc3c97d3af91112398e0a167583a4f1d2fd",
+      "lakefile.lean": null,
+      "lakefile.toml": "93af589712acc7d663195a90d7a844c6ff06f3b96112fa64f6d70aac31089aab",
+      "lean-toolchain": "5699bbbd7db4601365371c8b0c9bf463d07d747b5f4d8aedabce9eb067dfc150",
+      "proofs/JSP000243.lean": "f088d21e54ea3dd4cab74149bc04701ff75e064ffb5fb46e4f1a2af5e95cc536",
+      "proofs/JSP000307.lean": "b5cafbda73927bc341d3d74e34ab5de0da79e91208bc69044c239e7fced78afa",
+      "proofs/JSP000399.lean": "fd8e67e3ac42dde5d05c1d05fdeb9a36be2f32461eec1ee7ce10688db398fd9a"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "--version"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/version-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 0.173,
+      "log_sha256": "9d4ad44be3b378a00da49ae81155f44083722b40877a7ad7a7c7d957e9626b8f"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/version-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.28,
+      "log_sha256": "1869358d636a7fff4ffbab6d4b253f0ebad08073d0f32b9037200945a891ea1c"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000307"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0000-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.406,
+      "log_sha256": "977406a303fb28decad8f1684489c0c6f787fea57b1165b574e462343daa3e60"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000307.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0000-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 6.616,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0000.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0000-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.607,
+      "log_sha256": "3d3101ade448ea30573eb12609b0ee52a8aaed9ba4d576ebee1d9c4c802e45ce"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000399"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0001-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 1.897,
+      "log_sha256": "94024b7c22917f11f9302d10e48e48477a12213777406d5edd525b9aa1c7b6a1"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000399.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0001-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 4.12,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0001.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0001-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.759,
+      "log_sha256": "7fab96067a26a7ed6970e7b6a4b5e5488e69c56828ca29533efd4b8964a9e777"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000399"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0002-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.491,
+      "log_sha256": "94024b7c22917f11f9302d10e48e48477a12213777406d5edd525b9aa1c7b6a1"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000399.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0002-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 11.371,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0002.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0002-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 9.381,
+      "log_sha256": "11fc6999cd543f8414e04b0bfa9fff62bcefc1614cb52186dd37ad996d05bbee"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000243"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0003-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.909,
+      "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0003-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 9.007,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0003.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0003-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 4.509,
+      "log_sha256": "ba27c999455d64ab081c654e5b707fd28e0fffbc5f15a5350f96a9083e3cc388"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000243"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0004-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.455,
+      "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0004-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 6.13,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0004.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0004-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 4.641,
+      "log_sha256": "d19281b03c515acfb2cf77b0991c68ba9238968485fa36d039d14888054fb42f"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000243"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0005-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.341,
+      "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0005-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 5.389,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0005.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0005-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.179,
+      "log_sha256": "77c311156877883f33207a90b4a1c68f1bf4f411d3dfb17ac2da039a19b7346c"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000243"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0006-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.924,
+      "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0006-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 11.156,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0006.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0006-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 6.029,
+      "log_sha256": "79d648859c19f611a3630a09a058da180cd4d332922ceeb5f50f2a8542627c1c"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000243"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0007-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 9.883,
+      "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0007-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 10.679,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0007.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0007-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 3.849,
+      "log_sha256": "2218cc2b51ea1903e840cbb35392e5b12e1950ac7f37056c89a5c6a24f9e2a41"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "build",
+        "+JSP000243"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0008-0.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 2.757,
+      "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0008-1.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 8.887,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/Users/doge/.elan/bin/lake",
+        "env",
+        "lean",
+        "/private/tmp/lv-final2/audit-out/Audit0008.lean"
+      ],
+      "cwd": "/private/tmp/lv-final2/repo",
+      "log": "/private/tmp/lv-final2/audit-out/0008-2.log",
+      "exit_code": 0,
+      "status": "ok",
+      "seconds": 7.203,
+      "log_sha256": "e76cfe5c9ad63254cc23a19f9173e88da0b247714227a2889bc24016a04ae16b"
+    }
+  ],
+  "targets": [
+    {
+      "id": "jsp_000307_statement",
+      "declaration": "JSP000307.jsp_000307_statement",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0000.lean",
+      "audit_sha256": "9e638c65e61a7c88e6de5813ae7f0a62e3298399c990f6b18ad2042f9877353b",
+      "status": "trust_review_required",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "JSP000307.jsp_000307_statement._native.native_decide.ax_1_1"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000307"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0000-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 2.406,
+          "log_sha256": "977406a303fb28decad8f1684489c0c6f787fea57b1165b574e462343daa3e60"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000307.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0000-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 6.616,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0000.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0000-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.607,
+          "log_sha256": "3d3101ade448ea30573eb12609b0ee52a8aaed9ba4d576ebee1d9c4c802e45ce"
+        }
+      ]
+    },
+    {
+      "id": "jsp_000399",
+      "declaration": "JSP000399.jsp_000399",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0001.lean",
+      "audit_sha256": "b7b0b96a8aa2eed5977f4b215500e99a1b267ea26524560ad35a150fa7d3560a",
+      "status": "trust_review_required",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "JSP000399.jsp_000399._native.native_decide.ax_1_1",
+        "JSP000399.jsp_000399._native.native_decide.ax_1_2"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000399"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0001-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 1.897,
+          "log_sha256": "94024b7c22917f11f9302d10e48e48477a12213777406d5edd525b9aa1c7b6a1"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000399.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0001-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 4.12,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0001.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0001-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.759,
+          "log_sha256": "7fab96067a26a7ed6970e7b6a4b5e5488e69c56828ca29533efd4b8964a9e777"
+        }
+      ]
+    },
+    {
+      "id": "jsp_000399_positive",
+      "declaration": "JSP000399.jsp_000399_positive",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0002.lean",
+      "audit_sha256": "f0ebfaa3706f94116db15d6ce6735b1dc0839abd131af67f01641f4f5d94d4ad",
+      "status": "trust_review_required",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "JSP000399.jsp_000399_positive._native.native_decide.ax_1_1",
+        "JSP000399.jsp_000399_positive._native.native_decide.ax_1_2",
+        "JSP000399.jsp_000399_positive._native.native_decide.ax_1_3",
+        "JSP000399.jsp_000399_positive._native.native_decide.ax_1_4"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000399"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0002-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 2.491,
+          "log_sha256": "94024b7c22917f11f9302d10e48e48477a12213777406d5edd525b9aa1c7b6a1"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000399.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0002-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 11.371,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0002.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0002-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 9.381,
+          "log_sha256": "11fc6999cd543f8414e04b0bfa9fff62bcefc1614cb52186dd37ad996d05bbee"
+        }
+      ]
+    },
+    {
+      "id": "two_three_six",
+      "declaration": "JSP000243.two_three_six",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0003.lean",
+      "audit_sha256": "54c5f9943e4e8736763561e39992751ac7e2b88205ce83e950ca8cb59bbe1847",
+      "status": "trust_review_required",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "JSP000243.two_three_six._native.native_decide.ax_1_1"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000243"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0003-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 2.909,
+          "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0003-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 9.007,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0003.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0003-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 4.509,
+          "log_sha256": "ba27c999455d64ab081c654e5b707fd28e0fffbc5f15a5350f96a9083e3cc388"
+        }
+      ]
+    },
+    {
+      "id": "interval_2_5_none",
+      "declaration": "JSP000243.interval_2_5_none",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0004.lean",
+      "audit_sha256": "3f7e144a198656fff7c438fe0ef2f2f6364ed23ee68b9a501845c5bf6403e1ca",
+      "status": "trust_review_required",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "JSP000243.interval_2_5_none._native.native_decide.ax_1_1"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000243"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0004-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 2.455,
+          "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0004-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 6.13,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0004.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0004-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 4.641,
+          "log_sha256": "d19281b03c515acfb2cf77b0991c68ba9238968485fa36d039d14888054fb42f"
+        }
+      ]
+    },
+    {
+      "id": "interval_3_6_none",
+      "declaration": "JSP000243.interval_3_6_none",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0005.lean",
+      "audit_sha256": "14e500e49e20eed7d17d01b9ece518e568c469ade1f38d5ebfe6f512e7bee188",
+      "status": "trust_review_required",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "JSP000243.interval_3_6_none._native.native_decide.ax_1_1"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000243"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0005-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 2.341,
+          "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0005-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 5.389,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0005.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0005-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.179,
+          "log_sha256": "77c311156877883f33207a90b4a1c68f1bf4f411d3dfb17ac2da039a19b7346c"
+        }
+      ]
+    },
+    {
+      "id": "interval_4_7_none",
+      "declaration": "JSP000243.interval_4_7_none",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0006.lean",
+      "audit_sha256": "f93efcb6e6a03f999ea31f2987402b47454f5e4aca4ff65a0da65661314811ad",
+      "status": "trust_review_required",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "JSP000243.interval_4_7_none._native.native_decide.ax_1_1"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000243"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0006-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 2.924,
+          "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0006-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 11.156,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0006.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0006-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 6.029,
+          "log_sha256": "79d648859c19f611a3630a09a058da180cd4d332922ceeb5f50f2a8542627c1c"
+        }
+      ]
+    },
+    {
+      "id": "totals_below_one",
+      "declaration": "JSP000243.totals_below_one",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0007.lean",
+      "audit_sha256": "5a0fad09c8bd5d5669cb31ca22ebd00a5ecb72e52bb85a460037eb69a4c59668",
+      "status": "trust_review_required",
+      "axioms": [
+        "JSP000243.totals_below_one._native.native_decide.ax_1_1"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000243"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0007-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 9.883,
+          "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0007-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 10.679,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0007.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0007-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 3.849,
+          "log_sha256": "2218cc2b51ea1903e840cbb35392e5b12e1950ac7f37056c89a5c6a24f9e2a41"
+        }
+      ]
+    },
+    {
+      "id": "tail_below_one",
+      "declaration": "JSP000243.tail_below_one",
+      "audit_file": "/private/tmp/lv-final2/audit-out/Audit0008.lean",
+      "audit_sha256": "35ad0c1918be58b58cabfbbc809255dd44dde3127a7efeb9b7e4e76740636e34",
+      "status": "standard_axioms_only",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "build",
+            "+JSP000243"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0008-0.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 2.757,
+          "log_sha256": "ca8b591ae20925157a135e6b880fd713aa52ffe0e9a1ce5cd14418b743a03987"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/repo/proofs/JSP000243.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0008-1.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 8.887,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "/Users/doge/.elan/bin/lake",
+            "env",
+            "lean",
+            "/private/tmp/lv-final2/audit-out/Audit0008.lean"
+          ],
+          "cwd": "/private/tmp/lv-final2/repo",
+          "log": "/private/tmp/lv-final2/audit-out/0008-2.log",
+          "exit_code": 0,
+          "status": "ok",
+          "seconds": 7.203,
+          "log_sha256": "e76cfe5c9ad63254cc23a19f9173e88da0b247714227a2889bc24016a04ae16b"
+        }
+      ]
+    }
+  ],
+  "mechanical_status": "trust_review_required",
+  "tool_versions": [
+    "Lake version 5.0.0-src+86c6347 (Lean version 4.35.0-rc1)\n",
+    "Lean (version 4.35.0-rc1, arm64-apple-darwin24.6.0, commit 86c6347c75e39ec18c40e25ed2143b71a6e04a0a, Release)\n"
+  ],
+  "after": {
+    "ready_for_target_checks": true,
+    "issues": [],
+    "head": "f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848",
+    "git_status": "?? targets.json",
+    "toolchain_file": "leanprover/lean4:v4.35.0-rc1",
+    "file_sha256": {
+      "lake-manifest.json": "572f9feb246da12800feba740c647bc3c97d3af91112398e0a167583a4f1d2fd",
+      "lakefile.lean": null,
+      "lakefile.toml": "93af589712acc7d663195a90d7a844c6ff06f3b96112fa64f6d70aac31089aab",
+      "lean-toolchain": "5699bbbd7db4601365371c8b0c9bf463d07d747b5f4d8aedabce9eb067dfc150",
+      "proofs/JSP000243.lean": "f088d21e54ea3dd4cab74149bc04701ff75e064ffb5fb46e4f1a2af5e95cc536",
+      "proofs/JSP000307.lean": "b5cafbda73927bc341d3d74e34ab5de0da79e91208bc69044c239e7fced78afa",
+      "proofs/JSP000399.lean": "fd8e67e3ac42dde5d05c1d05fdeb9a36be2f32461eec1ee7ce10688db398fd9a"
+    },
+    "manual_preconditions": [
+      "isolation and resource limits established",
+      "clean source build and trusted cache provenance recorded",
+      "actual dependency SHAs match fixed evidence",
+      "tool binaries are trusted and match the pinned toolchain",
+      "all untracked inputs and module/source mappings reviewed"
+    ],
+    "checker_compatibility": "not_probed; inspect pinned checker separately"
+  },
+  "inputs_stable": true,
+  "manifest_sha256": "ba4b12c39017efcaa7d26cce1800d6c4c31d6651dc7e4985955b1e33dbc6ab09",
+  "script_sha256": "5db45dddcb4d588bc27e7c7161fbca5cedaa3e73e1c40843d21f5a214323cd07",
+  "exit_code": 2
+}

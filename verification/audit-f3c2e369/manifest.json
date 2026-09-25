@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "project": {
+    "root": "/tmp/lv-final2/repo",
+    "repository": "https://github.com/doge-th/jsp-lean-proofs",
+    "commit": "f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848",
+    "toolchain": "leanprover/lean4:v4.35.0-rc1"
+  },
+  "problems": [
+    {
+      "id": "JSP-000307",
+      "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000307",
+      "requirements": [
+        {
+          "id": "main",
+          "description": "存在三个连续正整数 n, n+1, n+2，其最大素因子严格递减：lpf(n) > lpf(n+1) > lpf(n+2)。",
+          "targets": [
+            "jsp_000307_statement"
+          ],
+          "coverage": "full",
+          "evidence": "clean build at pinned commit + #print axioms output in audit logs; see verification report"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000399",
+      "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000399",
+      "requirements": [
+        {
+          "id": "main",
+          "description": "存在两个不同的有限集 A ≠ B，其 k 元不同元素子集和的多重集相同（k=2），故无法从该多重集唯一恢复集合。另给出正整数集变体。",
+          "targets": [
+            "jsp_000399",
+            "jsp_000399_positive"
+          ],
+          "coverage": "full",
+          "evidence": "clean build at pinned commit + #print axioms output in audit logs; see verification report"
+        }
+      ]
+    },
+    {
+      "id": "JSP-000243",
+      "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000243",
+      "requirements": [
+        {
+          "id": "witness",
+          "description": "区间 [2,6] 含互异分母（2,3,6）其倒数和为 1。",
+          "targets": [
+            "two_three_six"
+          ],
+          "coverage": "full",
+          "evidence": "clean build at pinned commit + #print axioms output in audit logs; see verification report"
+        },
+        {
+          "id": "exclusion",
+          "description": "任何更短区间（长度 ≤ 3）不可能：[2,5]、[3,6]、[4,7] 穷举无解；a ≥ 4 的任意 [a,a+3] 总倒数和 < 1（a=4..7 穷举 + a≥8 一般引理）。",
+          "targets": [
+            "interval_2_5_none",
+            "interval_3_6_none",
+            "interval_4_7_none",
+            "totals_below_one",
+            "tail_below_one"
+          ],
+          "coverage": "full",
+          "evidence": "clean build at pinned commit + #print axioms output in audit logs; see verification report"
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "jsp_000307_statement",
+      "problem": "JSP-000307",
+      "role": "theorem",
+      "module": "JSP000307",
+      "source": "proofs/JSP000307.lean",
+      "declaration": "JSP000307.jsp_000307_statement"
+    },
+    {
+      "id": "jsp_000399",
+      "problem": "JSP-000399",
+      "role": "theorem",
+      "module": "JSP000399",
+      "source": "proofs/JSP000399.lean",
+      "declaration": "JSP000399.jsp_000399"
+    },
+    {
+      "id": "jsp_000399_positive",
+      "problem": "JSP-000399",
+      "role": "theorem",
+      "module": "JSP000399",
+      "source": "proofs/JSP000399.lean",
+      "declaration": "JSP000399.jsp_000399_positive"
+    },
+    {
+      "id": "two_three_six",
+      "problem": "JSP-000243",
+      "role": "theorem",
+      "module": "JSP000243",
+      "source": "proofs/JSP000243.lean",
+      "declaration": "JSP000243.two_three_six"
+    },
+    {
+      "id": "interval_2_5_none",
+      "problem": "JSP-000243",
+      "role": "theorem",
+      "module": "JSP000243",
+      "source": "proofs/JSP000243.lean",
+      "declaration": "JSP000243.interval_2_5_none"
+    },
+    {
+      "id": "interval_3_6_none",
+      "problem": "JSP-000243",
+      "role": "theorem",
+      "module": "JSP000243",
+      "source": "proofs/JSP000243.lean",
+      "declaration": "JSP000243.interval_3_6_none"
+    },
+    {
+      "id": "interval_4_7_none",
+      "problem": "JSP-000243",
+      "role": "theorem",
+      "module": "JSP000243",
+      "source": "proofs/JSP000243.lean",
+      "declaration": "JSP000243.interval_4_7_none"
+    },
+    {
+      "id": "totals_below_one",
+      "problem": "JSP-000243",
+      "role": "bridge",
+      "module": "JSP000243",
+      "source": "proofs/JSP000243.lean",
+      "declaration": "JSP000243.totals_below_one"
+    },
+    {
+      "id": "tail_below_one",
+      "problem": "JSP-000243",
+      "role": "bridge",
+      "module": "JSP000243",
+      "source": "proofs/JSP000243.lean",
+      "declaration": "JSP000243.tail_below_one"
+    }
+  ]
+}
