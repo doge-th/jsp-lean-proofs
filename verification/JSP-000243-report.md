@@ -1,6 +1,8 @@
 # JSP-000243 Lean 证明独立验证报告（提交前自查）
 
-**总体结论：验证通过（ witnesses 部分含本机计算信任，关键一般引理为纯标准公理）。**
+**总体结论：有条件通过。**
+>
+> 依 lean-verify skill 的结论表：全部目标检查成功、无证明缺口；关键一般引理 `tail_below_one` 为纯标准公理（完全构造性），但见证与穷举部分依赖 `native_decide` 本机计算信任。若验收方不接受该信任，结论降为待定而非完整通过。
 
 在证明仓库 https://github.com/doge-th/jsp-lean-proofs 的 commit
 `f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848` 上，该提交已**完整解决**指定原题
