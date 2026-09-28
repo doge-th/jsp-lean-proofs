@@ -1,0 +1,252 @@
+JSP000243.two_three_six : @Eq.{1} Rat
+  (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+    (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6)))))
+  (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+theorem JSP000243.two_three_six : @Eq.{1} Rat
+  (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+    (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6)))))
+  (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) :=
+@Mathlib.Meta.NormNum.isNat_eq_true.{0} Rat
+  (@Mathlib.Meta.NormNum.instAddMonoidWithOne'.{0} Rat
+    (@DivisionSemiring.toSemiring.{0} Rat
+      (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))
+  (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+    (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+      (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+      (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6)))))
+  (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+  (@Mathlib.Meta.NormNum.IsNNRat.to_isNat.{0} Rat
+    (@DivisionSemiring.toSemiring.{0} Rat
+      (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+    (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+      (@instHAdd.{0} Rat
+        (@Distrib.toAdd.{0} Rat
+          (@instDistribOfSemiring.{0} Rat
+            (@DivisionSemiring.toSemiring.{0} Rat
+              (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))
+      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6)))))
+    (nat_lit 1)
+    (@Mathlib.Meta.NormNum.isNNRat_add.{0} Rat
+      (@DivisionSemiring.toSemiring.{0} Rat
+        (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+        (@instHAdd.{0} Rat
+          (@Distrib.toAdd.{0} Rat
+            (@instDistribOfSemiring.{0} Rat
+              (@DivisionSemiring.toSemiring.{0} Rat
+                (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))))))
+      (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat (@instHAdd.{0} Rat Rat.instAdd)
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))
+      (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6))))
+      (nat_lit 5) (nat_lit 1) (nat_lit 1) (nat_lit 6) (nat_lit 6) (nat_lit 1) (nat_lit 36)
+      (@Eq.refl.{1} ((a a : Rat) → Rat)
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+          (@instHAdd.{0} Rat
+            (@Distrib.toAdd.{0} Rat
+              (@instDistribOfSemiring.{0} Rat
+                (@DivisionSemiring.toSemiring.{0} Rat
+                  (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))))
+      (@Mathlib.Meta.NormNum.isNNRat_add.{0} Rat
+        (@DivisionSemiring.toSemiring.{0} Rat
+          (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+        (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+          (@instHAdd.{0} Rat
+            (@Distrib.toAdd.{0} Rat
+              (@instDistribOfSemiring.{0} Rat
+                (@DivisionSemiring.toSemiring.{0} Rat
+                  (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+        (@HDiv.hDiv.{0, 0, 0} Rat Rat Rat (@instHDiv.{0} Rat Rat.instDiv)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))
+        (nat_lit 1) (nat_lit 1) (nat_lit 5) (nat_lit 2) (nat_lit 3) (nat_lit 6) (nat_lit 1)
+        (@Eq.refl.{1} ((a a : Rat) → Rat)
+          (@HAdd.hAdd.{0, 0, 0} Rat Rat Rat
+            (@instHAdd.{0} Rat
+              (@Distrib.toAdd.{0} Rat
+                (@instDistribOfSemiring.{0} Rat
+                  (@DivisionSemiring.toSemiring.{0} Rat
+                    (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))))))))
+        (@Mathlib.Meta.NormNum.isNNRat_div.{0} Rat
+          (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))) (nat_lit 1) (nat_lit 2)
+          (@Mathlib.Meta.NormNum.isNNRat_mul.{0} Rat
+            (@DivisionSemiring.toSemiring.{0} Rat
+              (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+            (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+              (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring))))
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+            (@Inv.inv.{0} Rat
+              (@InvOneClass.toInv.{0} Rat
+                (@DivInvOneMonoid.toInvOneClass.{0} Rat
+                  (@DivisionMonoid.toDivInvOneMonoid.{0} Rat
+                    (@GroupWithZero.toDivisionMonoid.{0} Rat
+                      (@DivisionSemiring.toGroupWithZero.{0} Rat
+                        (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))))))
+              (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))))
+            (nat_lit 1) (nat_lit 1) (nat_lit 1) (nat_lit 1) (nat_lit 2) (nat_lit 2) (nat_lit 1)
+            (@Eq.refl.{1} ((a a : Rat) → Rat)
+              (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring)))))
+            (@Mathlib.Meta.NormNum.IsNat.to_isNNRat.{0} Rat
+              (@DivisionSemiring.toSemiring.{0} Rat
+                (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+              (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+                (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                  (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+                (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+            (@Mathlib.Meta.NormNum.isNNRat_inv_pos.{0} Rat
+              (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)) Rat.instCharZero
+              (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))) (nat_lit 1) (nat_lit 1)
+              (@Mathlib.Meta.NormNum.IsNat.to_isNNRat.{0} Rat
+                (@DivisionSemiring.toSemiring.{0} Rat
+                  (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+                (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))) (nat_lit 2)
+                (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+                  (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                    (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2))) (nat_lit 2)
+                  (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 2) (@Rat.instOfNat (nat_lit 2)))))))
+            (@Eq.refl.{1} Nat (Nat.mul (nat_lit 1) (nat_lit 1))) (@Eq.refl.{1} Nat (nat_lit 2))))
+        (@Mathlib.Meta.NormNum.isNNRat_div.{0} Rat
+          (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))) (nat_lit 1) (nat_lit 3)
+          (@Mathlib.Meta.NormNum.isNNRat_mul.{0} Rat
+            (@DivisionSemiring.toSemiring.{0} Rat
+              (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+            (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+              (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring))))
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+            (@Inv.inv.{0} Rat
+              (@InvOneClass.toInv.{0} Rat
+                (@DivInvOneMonoid.toInvOneClass.{0} Rat
+                  (@DivisionMonoid.toDivInvOneMonoid.{0} Rat
+                    (@GroupWithZero.toDivisionMonoid.{0} Rat
+                      (@DivisionSemiring.toGroupWithZero.{0} Rat
+                        (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))))))
+              (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))))
+            (nat_lit 1) (nat_lit 1) (nat_lit 1) (nat_lit 1) (nat_lit 3) (nat_lit 3) (nat_lit 1)
+            (@Eq.refl.{1} ((a a : Rat) → Rat)
+              (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+                (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring)))))
+            (@Mathlib.Meta.NormNum.IsNat.to_isNNRat.{0} Rat
+              (@DivisionSemiring.toSemiring.{0} Rat
+                (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+              (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+                (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                  (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+                (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+            (@Mathlib.Meta.NormNum.isNNRat_inv_pos.{0} Rat
+              (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)) Rat.instCharZero
+              (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))) (nat_lit 2) (nat_lit 1)
+              (@Mathlib.Meta.NormNum.IsNat.to_isNNRat.{0} Rat
+                (@DivisionSemiring.toSemiring.{0} Rat
+                  (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+                (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))) (nat_lit 3)
+                (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+                  (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                    (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                  (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3))) (nat_lit 3)
+                  (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 3) (@Rat.instOfNat (nat_lit 3)))))))
+            (@Eq.refl.{1} Nat (Nat.mul (nat_lit 1) (nat_lit 1))) (@Eq.refl.{1} Nat (nat_lit 3))))
+        (@Eq.refl.{1} Nat (nat_lit 5)) (@Eq.refl.{1} Nat (nat_lit 6)))
+      (@Mathlib.Meta.NormNum.isNNRat_div.{0} Rat
+        (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField))
+        (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+        (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6))) (nat_lit 1) (nat_lit 6)
+        (@Mathlib.Meta.NormNum.isNNRat_mul.{0} Rat
+          (@DivisionSemiring.toSemiring.{0} Rat
+            (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+          (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+            (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring))))
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@Inv.inv.{0} Rat
+            (@InvOneClass.toInv.{0} Rat
+              (@DivInvOneMonoid.toInvOneClass.{0} Rat
+                (@DivisionMonoid.toDivInvOneMonoid.{0} Rat
+                  (@GroupWithZero.toDivisionMonoid.{0} Rat
+                    (@DivisionSemiring.toGroupWithZero.{0} Rat
+                      (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))))))
+            (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6))))
+          (nat_lit 1) (nat_lit 1) (nat_lit 1) (nat_lit 1) (nat_lit 6) (nat_lit 6) (nat_lit 1)
+          (@Eq.refl.{1} ((a a : Rat) → Rat)
+            (@HMul.hMul.{0, 0, 0} Rat Rat Rat
+              (@instHMul.{0} Rat (@Distrib.toMul.{0} Rat (@instDistribOfSemiring.{0} Rat Rat.semiring)))))
+          (@Mathlib.Meta.NormNum.IsNat.to_isNNRat.{0} Rat
+            (@DivisionSemiring.toSemiring.{0} Rat
+              (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+            (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+            (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+              (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+              (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))))))
+          (@Mathlib.Meta.NormNum.isNNRat_inv_pos.{0} Rat
+            (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)) Rat.instCharZero
+            (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6))) (nat_lit 5) (nat_lit 1)
+            (@Mathlib.Meta.NormNum.IsNat.to_isNNRat.{0} Rat
+              (@DivisionSemiring.toSemiring.{0} Rat
+                (@Semifield.toDivisionSemiring.{0} Rat (@Field.toSemifield.{0} Rat Rat.instField)))
+              (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6))) (nat_lit 6)
+              (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+                (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+                  (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+                (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6))) (nat_lit 6)
+                (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 6) (@Rat.instOfNat (nat_lit 6)))))))
+          (@Eq.refl.{1} Nat (Nat.mul (nat_lit 1) (nat_lit 1))) (@Eq.refl.{1} Nat (nat_lit 6))))
+      (@Eq.refl.{1} Nat (nat_lit 36)) (@Eq.refl.{1} Nat (nat_lit 36))))
+  (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Rat
+    (@AddGroupWithOne.toAddMonoidWithOne.{0} Rat
+      (@Ring.toAddGroupWithOne.{0} Rat (@DivisionRing.toRing.{0} Rat Rat.instDivisionRing)))
+    (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1))) (nat_lit 1)
+    (@Eq.refl.{1} Rat (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))))
+'JSP000243.two_three_six' depends on axioms: [propext, Classical.choice, Quot.sound]

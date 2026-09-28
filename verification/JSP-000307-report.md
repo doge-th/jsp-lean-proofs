@@ -1,11 +1,11 @@
 # JSP-000307 Lean 证明独立验证报告（提交前自查）
 
-**总体结论：有条件通过。**
+**总体结论：验证通过。**
 >
-> 依 lean-verify skill 的结论表：全部目标检查成功、无证明缺口，但依赖明确可解释的扩展信任——`native_decide` 本机计算（对见证值 13, 7, 5 的求值）。若验收方不接受本机计算信任，结论降为待定而非完整通过。
+> 在 commit `f8d46acfe8c9aa0cfdf5860e87858407da6a0b85` 上，官方 `skills/lean-verify/scripts/audit.py run` 对本文件全部目标返回 **`standard_axioms_only`**，公理集合恰为 [propext, Classical.choice, Quot.sound]。早期版本使用的 `native_decide` 已完全移除（见文末修订记录），`Lean.ofReduceBool` 不再进入 TCB。
 
 在证明仓库 https://github.com/doge-th/jsp-lean-proofs 的 commit
-`f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848` 上，该提交已**完整解决**指定原题
+`f8d46acfe8c9aa0cfdf5860e87858407da6a0b85` 上，该提交已**完整解决**指定原题
 JSP-000307（"Can three consecutive integers have strictly decreasing largest
 prime factors?"）：原题为纯存在性问题（∃ 三个连续正整数其最大素因子严格递减），
 形式化定理以显式见证 n = 13 完整给出该存在性证明，全部目标检查通过、无证明缺口。
@@ -21,7 +21,7 @@ prime factors?"）：原题为纯存在性问题（∃ 三个连续正整数其�
 ## 固定证据
 
 - 验证时间：2026-09-25（UTC+8）；工具链 `leanprover/lean4:v4.35.0-rc1`（Lake 5.0.0-src+86c6347）。
-- Lean 仓库：https://github.com/doge-th/jsp-lean-proofs，branch `main`，验证 commit `f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848`（= branch tip）。
+- Lean 仓库：https://github.com/doge-th/jsp-lean-proofs，branch `main`，验证 commit `f8d46acfe8c9aa0cfdf5860e87858407da6a0b85`（= branch tip）。
 - 原题来源：awards 仓库 `problems/catalog-0301-0400.md` JSP-000307 条目（问题措辞逐字核对）。
 - 目标声明完全限定名：`JSP000307.jsp_000307_statement`；源文件 `proofs/JSP000307.lean`
   （SHA-256 `b5cafbda73927bc341d3d74e34ab5de0da79e91208bc69044c239e7fced78afa`）。
@@ -62,7 +62,20 @@ prime factors?"）：原题为纯存在性问题（∃ 三个连续正整数其�
 
 已完成的复核级别：**实际 Lean 检查**（隔离环境、pinned commit、逐目标 build +
 axiom 审计，官方 audit.py 执行，日志与 SHA-256 存档于
-`verification/audit-f3c2e369/`）。未做 kernel replay 与外部 checker 独立复核——
+`verification/audit-f8d46ac/`）。未做 kernel replay 与外部 checker 独立复核——
 native_decide 路径下 kernel replay 不适用，已如实记录。
 
 本报告为提交者自查，不构成独立认证；以维护者复核为准。
+
+
+---
+
+## 修订记录
+
+| 日期 | commit | 变更 |
+|---|---|---|
+| 2026-09-25 | `f3c2e369` | 首次自查；使用 `native_decide` 判定见证与有限枚举，结论为**有条件通过**（本机计算信任）。 |
+| 2026-09-25 | `f8d46ac` | 应 Kernel Audit 要求移除全部 `native_decide`：JSP-000307 改用显式最大素因子条件 + `Nat.Prime.dvd_mul` / `Nat.prime_dvd_prime_iff_eq` / `decide` / `norm_num`；JSP-000399 改用 `decide`；JSP-000243 改用 `norm_num` + 布尔分支。重新运行官方 audit.py，9/9 目标 `standard_axioms_only`，结论升级为**验证通过**。 |
+
+审计证据（官方脚本原样输出、日志与 SHA-256）：
+`verification/audit-f8d46ac/`。

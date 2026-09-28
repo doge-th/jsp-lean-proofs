@@ -1,0 +1,1250 @@
+JSP000307.jsp_000307 : @Exists.{1} Nat fun (n : Nat) =>
+  @Exists.{1} Nat fun (p₁ : Nat) =>
+    @Exists.{1} Nat fun (p₂ : Nat) =>
+      @Exists.{1} Nat fun (p₃ : Nat) =>
+        And (@Eq.{1} Nat n (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+          (And (Nat.Prime p₁)
+            (And (Nat.Prime p₂)
+              (And (Nat.Prime p₃)
+                (And (@GT.gt.{0} Nat instLTNat p₁ p₂)
+                  (And (@GT.gt.{0} Nat instLTNat p₂ p₃)
+                    (And (@Dvd.dvd.{0} Nat Nat.instDvd p₁ n)
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd p₂
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd p₃
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d → @Dvd.dvd.{0} Nat Nat.instDvd d n → @LE.le.{0} Nat instLENat d p₁)
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d p₂)
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d p₃)))))))))))
+theorem JSP000307.jsp_000307 : @Exists.{1} Nat fun (n : Nat) =>
+  @Exists.{1} Nat fun (p₁ : Nat) =>
+    @Exists.{1} Nat fun (p₂ : Nat) =>
+      @Exists.{1} Nat fun (p₃ : Nat) =>
+        And (@Eq.{1} Nat n (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+          (And (Nat.Prime p₁)
+            (And (Nat.Prime p₂)
+              (And (Nat.Prime p₃)
+                (And (@GT.gt.{0} Nat instLTNat p₁ p₂)
+                  (And (@GT.gt.{0} Nat instLTNat p₂ p₃)
+                    (And (@Dvd.dvd.{0} Nat Nat.instDvd p₁ n)
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd p₂
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd p₃
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d → @Dvd.dvd.{0} Nat Nat.instDvd d n → @LE.le.{0} Nat instLENat d p₁)
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d p₂)
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d p₃))))))))))) :=
+@Exists.intro.{1} Nat
+  (fun (n : Nat) =>
+    @Exists.{1} Nat fun (p₁ : Nat) =>
+      @Exists.{1} Nat fun (p₂ : Nat) =>
+        @Exists.{1} Nat fun (p₃ : Nat) =>
+          And (@Eq.{1} Nat n (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+            (And (Nat.Prime p₁)
+              (And (Nat.Prime p₂)
+                (And (Nat.Prime p₃)
+                  (And (@GT.gt.{0} Nat instLTNat p₁ p₂)
+                    (And (@GT.gt.{0} Nat instLTNat p₂ p₃)
+                      (And (@Dvd.dvd.{0} Nat Nat.instDvd p₁ n)
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd p₂
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          (And
+                            (@Dvd.dvd.{0} Nat Nat.instDvd p₃
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d → @Dvd.dvd.{0} Nat Nat.instDvd d n → @LE.le.{0} Nat instLENat d p₁)
+                              (And
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                      @LE.le.{0} Nat instLENat d p₂)
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                      @LE.le.{0} Nat instLENat d p₃))))))))))))
+  (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+  (@Exists.intro.{1} Nat
+    (fun (p₁ : Nat) =>
+      @Exists.{1} Nat fun (p₂ : Nat) =>
+        @Exists.{1} Nat fun (p₃ : Nat) =>
+          And
+            (@Eq.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+            (And (Nat.Prime p₁)
+              (And (Nat.Prime p₂)
+                (And (Nat.Prime p₃)
+                  (And (@GT.gt.{0} Nat instLTNat p₁ p₂)
+                    (And (@GT.gt.{0} Nat instLTNat p₂ p₃)
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd p₁
+                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd p₂
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          (And
+                            (@Dvd.dvd.{0} Nat Nat.instDvd p₃
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                    @LE.le.{0} Nat instLENat d p₁)
+                              (And
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                      @LE.le.{0} Nat instLENat d p₂)
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                      @LE.le.{0} Nat instLENat d p₃))))))))))))
+    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+    (@Exists.intro.{1} Nat
+      (fun (p₂ : Nat) =>
+        @Exists.{1} Nat fun (p₃ : Nat) =>
+          And
+            (@Eq.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+            (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+              (And (Nat.Prime p₂)
+                (And (Nat.Prime p₃)
+                  (And (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) p₂)
+                    (And (@GT.gt.{0} Nat instLTNat p₂ p₃)
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd p₂
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          (And
+                            (@Dvd.dvd.{0} Nat Nat.instDvd p₃
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                              (And
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                      @LE.le.{0} Nat instLENat d p₂)
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                      @LE.le.{0} Nat instLENat d p₃))))))))))))
+      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+      (@Exists.intro.{1} Nat
+        (fun (p₃ : Nat) =>
+          And
+            (@Eq.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+            (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+              (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                (And (Nat.Prime p₃)
+                  (And
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                    (And (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) p₃)
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                          (And
+                            (@Dvd.dvd.{0} Nat Nat.instDvd p₃
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                              (And
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                      @LE.le.{0} Nat instLENat d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                (∀ (d : Nat),
+                                  Nat.Prime d →
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                      @LE.le.{0} Nat instLENat d p₃))))))))))))
+        (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+        (@And.intro
+          (@Eq.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+          (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+            (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+              (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                (And
+                  (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                    (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                  (And
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                    (And
+                      (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))))))))))))
+          (@rfl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+          (@And.intro (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+            (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+              (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                (And
+                  (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                    (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                  (And
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                    (And
+                      (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))))))))))
+            (@of_decide_eq_true (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+              (Nat.decidablePrime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+              (@id.{0}
+                (@Eq.{1} Bool
+                  (@Decidable.decide (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                    (Nat.decidablePrime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                  Bool.true)
+                (@Eq.refl.{1} Bool Bool.true)))
+            (@And.intro (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+              (And (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                (And
+                  (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                    (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                  (And
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                    (And
+                      (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))))))))))
+              (@of_decide_eq_true (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                (Nat.decidablePrime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                (@id.{0}
+                  (@Eq.{1} Bool
+                    (@Decidable.decide (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                      (Nat.decidablePrime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                    Bool.true)
+                  (@Eq.refl.{1} Bool Bool.true)))
+              (@And.intro (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                (And
+                  (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                    (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                  (And
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                    (And
+                      (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))))))))
+                (@of_decide_eq_true (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                  (Nat.decidablePrime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                  (@id.{0}
+                    (@Eq.{1} Bool
+                      (@Decidable.decide (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                        (Nat.decidablePrime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                      Bool.true)
+                    (@Eq.refl.{1} Bool Bool.true)))
+                (@And.intro
+                  (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                    (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                  (And
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                    (And
+                      (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))))))))
+                  (@of_decide_eq_true
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                    (Nat.decLt (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                    (@id.{0}
+                      (@Eq.{1} Bool
+                        (@Decidable.decide
+                          (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                          (Nat.decLt (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                        Bool.true)
+                      (@Eq.refl.{1} Bool Bool.true)))
+                  (@And.intro
+                    (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                    (And
+                      (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))))))
+                    (@of_decide_eq_true
+                      (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                      (Nat.decLt (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                      (@id.{0}
+                        (@Eq.{1} Bool
+                          (@Decidable.decide
+                            (@GT.gt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                            (Nat.decLt (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                          Bool.true)
+                        (@Eq.refl.{1} Bool Bool.true)))
+                    (@And.intro
+                      (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                      (And
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))))))
+                      (@Mathlib.Meta.NormNum.isNat_dvd_true
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13) (nat_lit 13)
+                        (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13)
+                          (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                        (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13)
+                          (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                        (@Eq.refl.{1} Nat (nat_lit 0)))
+                      (@And.intro
+                        (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                        (And
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))))
+                        (@Mathlib.Meta.NormNum.isNat_dvd_true
+                          (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))
+                          (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                          (nat_lit 7) (nat_lit 14)
+                          (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                            (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) (nat_lit 7)
+                            (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                          (@Mathlib.Meta.NormNum.isNat_add.{0} Nat Nat.instAddMonoidWithOne
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                              (@instHAdd.{0} Nat
+                                (@AddSemigroup.toAdd.{0} Nat
+                                  (@AddMonoid.toAddSemigroup.{0} Nat
+                                    (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne)))))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                            (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 13) (nat_lit 1)
+                            (nat_lit 14)
+                            (@Eq.refl.{1} ((a a : Nat) → Nat)
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                                (@instHAdd.{0} Nat
+                                  (@AddSemigroup.toAdd.{0} Nat
+                                    (@AddMonoid.toAddSemigroup.{0} Nat
+                                      (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne))))))
+                            (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13)
+                              (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                            (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 1)
+                              (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                            (@Eq.refl.{1} Nat (nat_lit 14)))
+                          (@Eq.refl.{1} Nat (nat_lit 0)))
+                        (@And.intro
+                          (@Dvd.dvd.{0} Nat Nat.instDvd (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                          (And
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))))
+                          (@Mathlib.Meta.NormNum.isNat_dvd_true
+                            (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))
+                            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                            (nat_lit 5) (nat_lit 15)
+                            (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                              (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))) (nat_lit 5)
+                              (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                            (@Mathlib.Meta.NormNum.isNat_add.{0} Nat Nat.instAddMonoidWithOne
+                              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                                (@instHAdd.{0} Nat
+                                  (@AddSemigroup.toAdd.{0} Nat
+                                    (@AddMonoid.toAddSemigroup.{0} Nat
+                                      (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne)))))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) (nat_lit 13) (nat_lit 2)
+                              (nat_lit 15)
+                              (@Eq.refl.{1} ((a a : Nat) → Nat)
+                                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                                  (@instHAdd.{0} Nat
+                                    (@AddSemigroup.toAdd.{0} Nat
+                                      (@AddMonoid.toAddSemigroup.{0} Nat
+                                        (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne))))))
+                              (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13)
+                                (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                              (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) (nat_lit 2)
+                                (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                              (@Eq.refl.{1} Nat (nat_lit 15)))
+                            (@Eq.refl.{1} Nat (nat_lit 0)))
+                          (@And.intro
+                            (∀ (d : Nat),
+                              Nat.Prime d →
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) →
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                            (And
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                            (fun (d : Nat) (hd : Nat.Prime d)
+                                (hdvd :
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))) =>
+                              have hd13 :
+                                @LE.le.{0} Nat instLENat d
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) :=
+                                @Nat.le_of_dvd d (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                  (@Mathlib.Meta.NormNum.isNat_lt_true.{0} Nat Nat.instSemiring Nat.instPartialOrder
+                                    (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring Nat.instPartialOrder
+                                      Nat.instIsStrictOrderedRing)
+                                    Nat.instCharZero (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 0)
+                                    (nat_lit 13)
+                                    (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) (nat_lit 0)
+                                      (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))
+                                    (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13)
+                                      (@Eq.refl.{1} Nat
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                                    (@Eq.refl.{1} Bool Bool.false))
+                                  hdvd;
+                              have h13p : Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) :=
+                                @of_decide_eq_true
+                                  (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                                  (Nat.decidablePrime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                                  (@id.{0}
+                                    (@Eq.{1} Bool
+                                      (@Decidable.decide
+                                        (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                                        (Nat.decidablePrime
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                                      Bool.true)
+                                    (@Eq.refl.{1} Bool Bool.true));
+                              have hd13_1 :
+                                @Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) :=
+                                @Iff.mp
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                                  (@Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))
+                                  (@Nat.prime_dvd_prime_iff_eq d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) hd h13p)
+                                  hdvd;
+                              hd13)
+                            (@And.intro
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                              (∀ (d : Nat),
+                                Nat.Prime d →
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                              (fun (d : Nat) (hd : Nat.Prime d)
+                                  (hdvd :
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))) =>
+                                have hd14 :
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 14) (instOfNatNat (nat_lit 14))) :=
+                                  @Nat.le_of_dvd d (@OfNat.ofNat.{0} Nat (nat_lit 14) (instOfNatNat (nat_lit 14)))
+                                    (@Mathlib.Meta.NormNum.isNat_lt_true.{0} Nat Nat.instSemiring Nat.instPartialOrder
+                                      (@IsStrictOrderedRing.toIsOrderedRing.{0} Nat Nat.instSemiring
+                                        Nat.instPartialOrder Nat.instIsStrictOrderedRing)
+                                      Nat.instCharZero (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 14) (instOfNatNat (nat_lit 14))) (nat_lit 0)
+                                      (nat_lit 14)
+                                      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) (nat_lit 0)
+                                        (@Eq.refl.{1} Nat
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))
+                                      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 14) (instOfNatNat (nat_lit 14))) (nat_lit 14)
+                                        (@Eq.refl.{1} Nat
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 14) (instOfNatNat (nat_lit 14)))))
+                                      (@Eq.refl.{1} Bool Bool.false))
+                                    hdvd;
+                                have hrew :
+                                  @Eq.{1} Nat
+                                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                                    (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) :=
+                                  @Mathlib.Meta.NormNum.isNat_eq_true.{0} Nat Nat.instAddMonoidWithOne
+                                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                                    (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                    (nat_lit 14)
+                                    (@Mathlib.Meta.NormNum.isNat_add.{0} Nat Nat.instAddMonoidWithOne
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                                        (@instHAdd.{0} Nat
+                                          (@AddSemigroup.toAdd.{0} Nat
+                                            (@AddMonoid.toAddSemigroup.{0} Nat
+                                              (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne)))))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 13)
+                                      (nat_lit 1) (nat_lit 14)
+                                      (@Eq.refl.{1} ((a a : Nat) → Nat)
+                                        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                                          (@instHAdd.{0} Nat
+                                            (@AddSemigroup.toAdd.{0} Nat
+                                              (@AddMonoid.toAddSemigroup.{0} Nat
+                                                (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne))))))
+                                      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13)
+                                        (@Eq.refl.{1} Nat
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                                      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) (nat_lit 1)
+                                        (@Eq.refl.{1} Nat
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                                      (@Eq.refl.{1} Nat (nat_lit 14)))
+                                    (@Mathlib.Meta.NormNum.isNat_mul.{0} Nat Nat.instSemiring
+                                      (@HMul.hMul.{0, 0, 0} Nat Nat Nat
+                                        (@instHMul.{0} Nat
+                                          (@Distrib.toMul.{0} Nat (@instDistribOfSemiring.{0} Nat Nat.instSemiring))))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) (nat_lit 2)
+                                      (nat_lit 7) (nat_lit 14)
+                                      (@Eq.refl.{1} ((a a : Nat) → Nat)
+                                        (@HMul.hMul.{0, 0, 0} Nat Nat Nat
+                                          (@instHMul.{0} Nat
+                                            (@Distrib.toMul.{0} Nat
+                                              (@instDistribOfSemiring.{0} Nat Nat.instSemiring)))))
+                                      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) (nat_lit 2)
+                                        (@Eq.refl.{1} Nat
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                                      (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) (nat_lit 7)
+                                        (@Eq.refl.{1} Nat
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                                      (@Eq.refl.{1} Nat (nat_lit 14)));
+                                have hdvd' :
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) :=
+                                  have h2 :
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) :=
+                                    hdvd;
+                                  @Eq.mp.{0}
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                                    (@congrArg.{1, 1} Nat Prop
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                                      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                      (fun (_a : Nat) => @Dvd.dvd.{0} Nat Nat.instDvd d _a) hrew)
+                                    h2;
+                                have hsplit :
+                                  Or
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) :=
+                                  @Iff.mp
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                                    (Or
+                                      (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                      (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                                    (@Nat.Prime.dvd_mul d (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) hd)
+                                    hdvd';
+                                @Or.casesOn
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                  (fun
+                                      (x :
+                                        Or
+                                          (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                          (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                            (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))) =>
+                                    @LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                  hsplit
+                                  (fun
+                                      (h :
+                                        @Dvd.dvd.{0} Nat Nat.instDvd d
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+                                    have hd2 :
+                                      @Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) :=
+                                      @Iff.mp
+                                        (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                        (@Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                        (@Nat.prime_dvd_prime_iff_eq d
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) hd
+                                          (@of_decide_eq_true
+                                            (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                            (Nat.decidablePrime
+                                              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                            (@id.{0}
+                                              (@Eq.{1} Bool
+                                                (@Decidable.decide
+                                                  (Nat.Prime
+                                                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                                  (Nat.decidablePrime
+                                                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                                                Bool.true)
+                                              (@Eq.refl.{1} Bool Bool.true))))
+                                        h;
+                                    @Decidable.byContradiction
+                                      (@LE.le.{0} Nat instLENat d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                      (Nat.decLe d (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                      fun
+                                        (a :
+                                          Not
+                                            (@LE.le.{0} Nat instLENat d
+                                              (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))) =>
+                                      JSP000307.jsp_000307._proof_1_1 d hd2 a)
+                                  fun
+                                    (h :
+                                      @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))) =>
+                                  have hd7 :
+                                    @Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) :=
+                                    @Iff.mp
+                                      (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                      (@Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                      (@Nat.prime_dvd_prime_iff_eq d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))) hd
+                                        (@of_decide_eq_true
+                                          (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                          (Nat.decidablePrime
+                                            (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                          (@id.{0}
+                                            (@Eq.{1} Bool
+                                              (@Decidable.decide
+                                                (Nat.Prime
+                                                  (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                                (Nat.decidablePrime
+                                                  (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7)))))
+                                              Bool.true)
+                                            (@Eq.refl.{1} Bool Bool.true))))
+                                      h;
+                                  @Decidable.byContradiction
+                                    (@LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                    (Nat.decLe d (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))
+                                    fun
+                                      (a :
+                                        Not
+                                          (@LE.le.{0} Nat instLENat d
+                                            (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))) =>
+                                    JSP000307.jsp_000307._proof_1_2 d hd7 a)
+                              fun (d : Nat) (hd : Nat.Prime d)
+                                (hdvd :
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))) =>
+                              have hrew :
+                                @Eq.{1} Nat
+                                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                  (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))) :=
+                                @Mathlib.Meta.NormNum.isNat_eq_true.{0} Nat Nat.instAddMonoidWithOne
+                                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                  (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                  (nat_lit 15)
+                                  (@Mathlib.Meta.NormNum.isNat_add.{0} Nat Nat.instAddMonoidWithOne
+                                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                                      (@instHAdd.{0} Nat
+                                        (@AddSemigroup.toAdd.{0} Nat
+                                          (@AddMonoid.toAddSemigroup.{0} Nat
+                                            (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne)))))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) (nat_lit 13)
+                                    (nat_lit 2) (nat_lit 15)
+                                    (@Eq.refl.{1} ((a a : Nat) → Nat)
+                                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat
+                                        (@instHAdd.{0} Nat
+                                          (@AddSemigroup.toAdd.{0} Nat
+                                            (@AddMonoid.toAddSemigroup.{0} Nat
+                                              (@AddMonoidWithOne.toAddMonoid.{0} Nat Nat.instAddMonoidWithOne))))))
+                                    (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))) (nat_lit 13)
+                                      (@Eq.refl.{1} Nat
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))))
+                                    (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) (nat_lit 2)
+                                      (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                                    (@Eq.refl.{1} Nat (nat_lit 15)))
+                                  (@Mathlib.Meta.NormNum.isNat_mul.{0} Nat Nat.instSemiring
+                                    (@HMul.hMul.{0, 0, 0} Nat Nat Nat
+                                      (@instHMul.{0} Nat
+                                        (@Distrib.toMul.{0} Nat (@instDistribOfSemiring.{0} Nat Nat.instSemiring))))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))) (nat_lit 3)
+                                    (nat_lit 5) (nat_lit 15)
+                                    (@Eq.refl.{1} ((a a : Nat) → Nat)
+                                      (@HMul.hMul.{0, 0, 0} Nat Nat Nat
+                                        (@instHMul.{0} Nat
+                                          (@Distrib.toMul.{0} Nat (@instDistribOfSemiring.{0} Nat Nat.instSemiring)))))
+                                    (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) (nat_lit 3)
+                                      (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+                                    (@Mathlib.Meta.NormNum.isNat_ofNat.{0} Nat Nat.instAddMonoidWithOne
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))) (nat_lit 5)
+                                      (@Eq.refl.{1} Nat (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                                    (@Eq.refl.{1} Nat (nat_lit 15)));
+                              have hdvd' :
+                                @Dvd.dvd.{0} Nat Nat.instDvd d
+                                  (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))) :=
+                                have h2 :
+                                  @Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) :=
+                                  hdvd;
+                                @Eq.mp.{0}
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                                  (@congrArg.{1, 1} Nat Prop
+                                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                                    (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                    (fun (_a : Nat) => @Dvd.dvd.{0} Nat Nat.instDvd d _a) hrew)
+                                  h2;
+                              have hsplit :
+                                Or
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))) :=
+                                @Iff.mp
+                                  (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                    (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                                  (Or
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                                  (@Nat.Prime.dvd_mul d (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))) hd)
+                                  hdvd';
+                              @Or.casesOn
+                                (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                  (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                (fun
+                                    (x :
+                                      Or
+                                        (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                        (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))) =>
+                                  @LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                hsplit
+                                (fun
+                                    (h :
+                                      @Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))) =>
+                                  have hd3 :
+                                    @Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) :=
+                                    @Iff.mp
+                                      (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                      (@Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                      (@Nat.prime_dvd_prime_iff_eq d
+                                        (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) hd
+                                        (@of_decide_eq_true
+                                          (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                          (Nat.decidablePrime
+                                            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                          (@id.{0}
+                                            (@Eq.{1} Bool
+                                              (@Decidable.decide
+                                                (Nat.Prime
+                                                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))
+                                                (Nat.decidablePrime
+                                                  (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+                                              Bool.true)
+                                            (@Eq.refl.{1} Bool Bool.true))))
+                                      h;
+                                  @Decidable.byContradiction
+                                    (@LE.le.{0} Nat instLENat d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                    (Nat.decLe d (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                    fun
+                                      (a :
+                                        Not
+                                          (@LE.le.{0} Nat instLENat d
+                                            (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))) =>
+                                    JSP000307.jsp_000307._proof_1_3 d hd3 a)
+                                fun
+                                  (h :
+                                    @Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))) =>
+                                have hd5 :
+                                  @Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))) :=
+                                  @Iff.mp
+                                    (@Dvd.dvd.{0} Nat Nat.instDvd d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                    (@Eq.{1} Nat d (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                    (@Nat.prime_dvd_prime_iff_eq d
+                                      (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))) hd
+                                      (@of_decide_eq_true
+                                        (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                        (Nat.decidablePrime
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                        (@id.{0}
+                                          (@Eq.{1} Bool
+                                            (@Decidable.decide
+                                              (Nat.Prime (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                              (Nat.decidablePrime
+                                                (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))
+                                            Bool.true)
+                                          (@Eq.refl.{1} Bool Bool.true))))
+                                    h;
+                                @Decidable.byContradiction
+                                  (@LE.le.{0} Nat instLENat d
+                                    (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                  (Nat.decLe d (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))
+                                  fun
+                                    (a :
+                                      Not
+                                        (@LE.le.{0} Nat instLENat d
+                                          (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))) =>
+                                  JSP000307.jsp_000307._proof_1_4 d hd5 a))))))))))))))
+'JSP000307.jsp_000307' depends on axioms: [propext, Classical.choice, Quot.sound]

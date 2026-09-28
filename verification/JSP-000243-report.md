@@ -1,11 +1,11 @@
 # JSP-000243 Lean 证明独立验证报告（提交前自查）
 
-**总体结论：有条件通过。**
+**总体结论：验证通过。**
 >
-> 依 lean-verify skill 的结论表：全部目标检查成功、无证明缺口；关键一般引理 `tail_below_one` 为纯标准公理（完全构造性），但见证与穷举部分依赖 `native_decide` 本机计算信任。若验收方不接受该信任，结论降为待定而非完整通过。
+> 在 commit `f8d46acfe8c9aa0cfdf5860e87858407da6a0b85` 上，官方 audit.py 对本文件全部六个目标均返回 **`standard_axioms_only`**。先前的 `native_decide` 已全部替换为 `norm_num` 与布尔分支穷举；一般引理 `tail_below_one` 为完全构造性证明。
 
 在证明仓库 https://github.com/doge-th/jsp-lean-proofs 的 commit
-`f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848` 上，该提交已**完整解决**指定原题
+`f8d46acfe8c9aa0cfdf5860e87858407da6a0b85` 上，该提交已**完整解决**指定原题
 JSP-000243（"What is the shortest integer interval containing distinct
 denominators whose reciprocals sum to one?"，分母 ≥ 2 读法）：答案为**[2, 6]**，
 由见证（1/2+1/3+1/6=1）与更短区间的完备排除两部分组成，两部分均已机器验证。
@@ -21,7 +21,7 @@ denominators whose reciprocals sum to one?"，分母 ≥ 2 读法）：答案为
 
 - 验证时间：2026-09-25（UTC+8）；工具链 `leanprover/lean4:v4.35.0-rc1`。
 - Lean 仓库：https://github.com/doge-th/jsp-lean-proofs，`main`，commit
-  `f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848`。
+  `f8d46acfe8c9aa0cfdf5860e87858407da6a0b85`。
 - 原题来源：awards 仓库 `problems/catalog-0201-0300.md` JSP-000243 条目。
 - 目标：`JSP000243.two_three_six`、`interval_2_5_none`、`interval_3_6_none`、
   `interval_4_7_none`、`totals_below_one`、`tail_below_one`；
@@ -57,4 +57,17 @@ denominators whose reciprocals sum to one?"，分母 ≥ 2 读法）：答案为
 ## 复核级别
 
 实际 Lean 检查（隔离环境、pinned commit、官方 audit.py、日志存于
-`verification/audit-f3c2e369/`）。本报告为提交者自查，以维护者复核为准。
+`verification/audit-f8d46ac/`）。本报告为提交者自查，以维护者复核为准。
+
+
+---
+
+## 修订记录
+
+| 日期 | commit | 变更 |
+|---|---|---|
+| 2026-09-25 | `f3c2e369` | 首次自查；使用 `native_decide` 判定见证与有限枚举，结论为**有条件通过**（本机计算信任）。 |
+| 2026-09-25 | `f8d46ac` | 应 Kernel Audit 要求移除全部 `native_decide`：JSP-000307 改用显式最大素因子条件 + `Nat.Prime.dvd_mul` / `Nat.prime_dvd_prime_iff_eq` / `decide` / `norm_num`；JSP-000399 改用 `decide`；JSP-000243 改用 `norm_num` + 布尔分支。重新运行官方 audit.py，9/9 目标 `standard_axioms_only`，结论升级为**验证通过**。 |
+
+审计证据（官方脚本原样输出、日志与 SHA-256）：
+`verification/audit-f8d46ac/`。

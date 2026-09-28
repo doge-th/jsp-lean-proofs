@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "project": {
-    "root": "/tmp/lv-final2/repo",
+    "root": "/tmp/lv-final4/repo",
     "repository": "https://github.com/doge-th/jsp-lean-proofs",
-    "commit": "f3c2e369a58a4f9bff119e0c5b6e6b99f6ec1848",
+    "commit": "f8d46acfe8c9aa0cfdf5860e87858407da6a0b85",
     "toolchain": "leanprover/lean4:v4.35.0-rc1"
   },
   "problems": [
@@ -74,7 +74,7 @@
       "role": "theorem",
       "module": "JSP000307",
       "source": "proofs/JSP000307.lean",
-      "declaration": "JSP000307.jsp_000307_statement"
+      "declaration": "JSP000307.jsp_000307"
     },
     {
       "id": "jsp_000399",
