@@ -31,7 +31,7 @@ namespace JSP000243
 /-- The witness: 1/2 + 1/3 + 1/6 = 1. -/
 theorem two_three_six :
     (1 : ℚ) / 2 + 1 / 3 + 1 / 6 = 1 := by
-  native_decide
+  norm_num
 
 /-- Exhaustive: no subset of distinct denominators from {2,3,4,5}
 has reciprocal sum 1 (16 subsets). -/
