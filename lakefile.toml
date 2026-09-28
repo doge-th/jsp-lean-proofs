@@ -401,3 +401,7 @@ srcDir = "proofs"
 [[lean_lib]]
 name = "JSP000243"
 srcDir = "proofs"
+
+[[lean_lib]]
+name = "JSP-000598"
+srcDir = "proofs"
