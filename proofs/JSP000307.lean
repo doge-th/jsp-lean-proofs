@@ -1,53 +1,54 @@
-/-
-Copyright (c) 2026. All rights reserved.
-Released under Apache 2.0 license.
-
-Justin Sun Prize JSP-000307: Can three consecutive integers have strictly
-decreasing largest prime factors?
-
-We answer "yes" by exhibiting the triple (13, 14, 15), whose largest prime
-factors are 13, 7, 5 respectively, and verifying the strict decrease with
-`native_decide`.
--/
-
 import Mathlib.Data.Nat.MaxPrimeFac
+import Mathlib.Data.Nat.Prime.Defs
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Linarith
 
 namespace JSP000307
 
-/-- The largest prime factor of a natural number `n` (using Mathlib's
-canonical definition). For `n = 0` this is `0`, and for `n = 1` it is `1`;
-for `n > 1` it is the greatest prime dividing `n`. -/
-abbrev largestPrimeFactor (n : ℕ) : ℕ := Nat.maxPrimeFac n
-
-/-- The conjectured statement: there exist three consecutive integers whose
-largest prime factors are strictly decreasing.
-
-This is the formal restatement of JSP-000307. We do NOT prove this in
-full generality (it is an existential statement and would require a much
-deeper search), but we provide concrete witnesses below. -/
-theorem jsp_000307_statement : ∃ n : ℕ,
-    largestPrimeFactor n > largestPrimeFactor (n + 1) ∧
-    largestPrimeFactor (n + 1) > largestPrimeFactor (n + 2) := by
-  -- Use `Exists.intro` to introduce the concrete witness `n = 13`.
-  refine ⟨13, ?_⟩
-  -- Reduce the goal to evaluating `maxPrimeFac` on 13, 14, 15, then check
-  -- the resulting purely-arithmetic inequality.
-  simp only [largestPrimeFactor]
-  native_decide
-
-/-- Concrete verification for the triple (13, 14, 15). -/
-theorem triple_13_14_15 :
-    largestPrimeFactor 13 > largestPrimeFactor 14 ∧
-    largestPrimeFactor 14 > largestPrimeFactor 15 := by
-  simp only [largestPrimeFactor]
-  native_decide
-
-/-- Explicit evaluation of `largestPrimeFactor` on the witness triple. -/
-theorem triple_values :
-    largestPrimeFactor 13 = 13 ∧
-    largestPrimeFactor 14 = 7 ∧
-    largestPrimeFactor 15 = 5 := by
-  simp only [largestPrimeFactor]
-  native_decide
+theorem jsp_000307 :
+    ∃ n p₁ p₂ p₃ : ℕ,
+      n = 13 ∧
+      Nat.Prime p₁ ∧ Nat.Prime p₂ ∧ Nat.Prime p₃ ∧
+      p₁ > p₂ ∧ p₂ > p₃ ∧
+      p₁ ∣ n ∧ p₂ ∣ n + 1 ∧ p₃ ∣ n + 2 ∧
+      (∀ d, Nat.Prime d → d ∣ n → d ≤ p₁) ∧
+      (∀ d, Nat.Prime d → d ∣ n + 1 → d ≤ p₂) ∧
+      (∀ d, Nat.Prime d → d ∣ n + 2 → d ≤ p₃) := by
+  refine ⟨13, 13, 7, 5, rfl, by decide, by decide, by decide, by decide, by decide,
+    by norm_num, by norm_num, by norm_num, ?_, ?_, ?_⟩
+  · -- every prime divisor of 13 equals 13
+    intro d hd hdvd
+    have hd13 : d ≤ 13 := Nat.le_of_dvd (by norm_num) hdvd
+    have h13p : Nat.Prime 13 := by decide
+    have hd13 : d = 13 := (Nat.prime_dvd_prime_iff_eq hd h13p).mp hdvd
+    omega
+  · -- every prime divisor of 14 = 2·7 is 2 or 7, hence ≤ 7
+    intro d hd hdvd
+    have hd14 : d ≤ 14 := Nat.le_of_dvd (by norm_num) hdvd
+    have hrew : (13:ℕ) + 1 = 2 * 7 := by norm_num
+    have hdvd' : d ∣ 2 * 7 := by
+      have h2 : d ∣ 13 + 1 := hdvd
+      rw [hrew] at h2
+      exact h2
+    have hsplit := (Nat.Prime.dvd_mul hd).mp hdvd'
+    rcases hsplit with h | h
+    · have hd2 : d = 2 := (Nat.prime_dvd_prime_iff_eq hd (by decide)).mp h
+      omega
+    · -- d ∣ 7, d prime → d = 7
+      have hd7 : d = 7 := (Nat.prime_dvd_prime_iff_eq hd (by decide)).mp h
+      omega
+  · -- every prime divisor of 15 = 3·5 is 3 or 5, hence ≤ 5 < 7
+    intro d hd hdvd
+    have hrew : (13:ℕ) + 2 = 3 * 5 := by norm_num
+    have hdvd' : d ∣ 3 * 5 := by
+      have h2 : d ∣ 13 + 2 := hdvd
+      rw [hrew] at h2
+      exact h2
+    have hsplit := (Nat.Prime.dvd_mul hd).mp hdvd'
+    rcases hsplit with h | h
+    · have hd3 : d = 3 := (Nat.prime_dvd_prime_iff_eq hd (by decide)).mp h
+      omega
+    · have hd5 : d = 5 := (Nat.prime_dvd_prime_iff_eq hd (by decide)).mp h
+      omega
 
 end JSP000307

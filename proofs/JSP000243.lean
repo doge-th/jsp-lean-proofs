@@ -40,7 +40,8 @@ theorem interval_2_5_none :
       ¬((1:ℚ)/2 * (if b2 then 1 else 0) + 1/3 * (if b3 then 1 else 0)
         + 1/4 * (if b4 then 1 else 0) + 1/5 * (if b5 then 1 else 0) = 1)
       ∨ ¬(b2 ∨ b3 ∨ b4 ∨ b5) := by
-  native_decide
+  intro b2 b3 b4 b5
+  cases b2 <;> cases b3 <;> cases b4 <;> cases b5 <;> norm_num
 
 /-- Exhaustive: no subset of distinct denominators from {3,4,5,6}
 has reciprocal sum 1. -/
@@ -49,7 +50,8 @@ theorem interval_3_6_none :
       ¬((1:ℚ)/3 * (if b3 then 1 else 0) + 1/4 * (if b4 then 1 else 0)
         + 1/5 * (if b5 then 1 else 0) + 1/6 * (if b6 then 1 else 0) = 1)
       ∨ ¬(b3 ∨ b4 ∨ b5 ∨ b6) := by
-  native_decide
+  intro b3 b4 b5 b6
+  cases b3 <;> cases b4 <;> cases b5 <;> cases b6 <;> norm_num
 
 /-- Exhaustive: no subset of distinct denominators from {4,5,6,7}
 has reciprocal sum 1. -/
@@ -58,7 +60,8 @@ theorem interval_4_7_none :
       ¬((1:ℚ)/4 * (if b4 then 1 else 0) + 1/5 * (if b5 then 1 else 0)
         + 1/6 * (if b6 then 1 else 0) + 1/7 * (if b7 then 1 else 0) = 1)
       ∨ ¬(b4 ∨ b5 ∨ b6 ∨ b7) := by
-  native_decide
+  intro b4 b5 b6 b7
+  cases b4 <;> cases b5 <;> cases b6 <;> cases b7 <;> norm_num
 
 /-- For every a ≥ 4 the sum of ALL reciprocals in [a, a+3] is < 1:
 spot checks for a = 4..7, and for a ≥ 8 each term is ≤ 1/a so the sum
@@ -68,7 +71,7 @@ theorem totals_below_one :
     (1/5 + 1/6 + 1/7 + 1/8 < 1) ∧
     (1/6 + 1/7 + 1/8 + 1/9 < 1) ∧
     (1/7 + 1/8 + 1/9 + 1/10 < 1) := by
-  native_decide
+  norm_num
 
 /-- General tail case: for a ≥ 8 every subset sum from `{a,…,a+3}` is
 < 1: each of the four reciprocals is ≤ 1/8, so the total is ≤ 1/2. -/

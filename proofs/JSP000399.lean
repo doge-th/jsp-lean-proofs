@@ -25,8 +25,8 @@ def pairSums (A : Finset ℕ) : Multiset ℕ :=
 2-element subset sums. -/
 theorem jsp_000399 : ∃ A B : Finset ℕ, A ≠ B ∧ pairSums A = pairSums B := by
   refine ⟨{0, 3, 5, 6}, {1, 2, 4, 7}, ?_, ?_⟩
-  · native_decide
-  · native_decide
+  · decide
+  · decide
 
 /-- The counterexample can be shifted to strictly positive integers:
 {1,4,6,7} and {2,3,5,8} have the same multiset of 2-element sums
@@ -35,9 +35,9 @@ theorem jsp_000399_positive :
     ∃ A B : Finset ℕ, A ≠ B ∧ (∀ x ∈ A, x > 0) ∧ (∀ x ∈ B, x > 0) ∧
       pairSums A = pairSums B := by
   refine ⟨{1, 4, 6, 7}, {2, 3, 5, 8}, ?_, ?_, ?_, ?_⟩
-  · native_decide
-  · native_decide
-  · native_decide
-  · native_decide
+  · decide
+  · decide
+  · decide
+  · decide
 
 end JSP000399
